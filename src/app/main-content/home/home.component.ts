@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  currentLanguage: string = 'de';
 
+  toggleLanguage(language: string) {
+    this.currentLanguage = language;
+    // Add any additional logic for language change here
+  }
 }

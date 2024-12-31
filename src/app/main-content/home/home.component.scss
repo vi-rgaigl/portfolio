@@ -6,3 +6,63 @@ section {
     width: $c-width;
     @include bg-main();
 }
+
+header {
+    height: 80px;
+    @include d-flex(row, flex-end, center, 20px);
+    margin-right: 84px;
+
+    .icon {
+        height: 36px;
+        width: 36px;
+    }
+
+    .email {
+        background-image: url('../../../assets/icons/email.png');
+        @include img-cover();
+
+        &:hover {
+            background-image: url('../../../assets/icons/email-hover.png');
+            cursor: pointer;
+        }
+    }
+
+    .github {
+        background-image: url('../../../assets/icons/github.png');
+        @include img-cover();
+
+        &:hover {
+            background-image: url('../../../assets/icons/github-hover.png');
+            cursor: pointer;
+        }
+    }
+
+    .linkedin {
+        background-image: url('../../../assets/icons/linked-in.png');
+        @include img-cover();
+
+        &:hover {
+            background-image: url('../../../assets/icons/linked-in-hover.png');
+            cursor: pointer;
+        }
+    }
+}
+
+.language-toggle {
+    @include d-flex(row, center, center, 8px);
+    color: white;
+    margin-left: 32px;
+
+    .lang {
+        cursor: pointer;
+    }
+
+    .separator {
+        height: 16px;
+        border-left: 3px solid white;
+    }
+
+    .active {
+        color: $bg-green;
+    }
+}
