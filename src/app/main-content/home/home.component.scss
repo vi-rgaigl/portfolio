@@ -66,3 +66,38 @@ header {
         color: $bg-green;
     }
 }
+
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    @include d-flex(column, center, space-between, 0);
+    text-align: end;
+
+    .avatar {
+        position: absolute;
+        height: 80%; 
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .text-content {
+        position: relative;
+        z-index: 1;
+        margin-right: 84px;
+        transform: translateY(68%);
+        .headline {
+            @include font(80px, 700, $bg-green);
+            width: 100%;
+        }
+        .subline {
+            @include font(50px, 600, $bg-green);
+            @include font-outline();
+            width: 100%;
+        }
+    }
+}

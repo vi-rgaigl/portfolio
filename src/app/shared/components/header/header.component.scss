@@ -28,7 +28,7 @@ nav {
             text-decoration: none;
         }
         &:hover {
-            @include font-outline();
+            @include font-outline($color: black);
         }
     }
 }
