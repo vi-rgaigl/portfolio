@@ -1,0 +1,8 @@
+@import "./../../shared/styles/_variables.scss";
+
+section {
+    height: 200%;
+    width: 100vw;
+    background-color:darksalmon ;
+    overflow-y: scroll;
+}
