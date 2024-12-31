@@ -1,7 +1,8 @@
 @import "./../../styles/_variables.scss";
+@import "./../../styles/_mixin.scss";
 
 section {
     height: 100%;
     width: $h-width;
-    background-color: $bg-color;
+    background-color: $bg-green;
 }

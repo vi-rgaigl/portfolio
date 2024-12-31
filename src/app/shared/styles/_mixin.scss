@@ -1,0 +1,23 @@
+@mixin bg-main {
+    background: linear-gradient( #000000, #0b0a0a );
+}
+
+@mixin font($size: 16px, $weight: 400, $color: black) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin font-outline() {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+@mixin d-flex($direction: column, $justify: center, $align: center, $gap: 32px) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
