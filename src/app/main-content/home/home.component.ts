@@ -1,17 +1,20 @@
 import { Component } from '@angular/core';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [TranslocoModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
   currentLanguage: string = 'de';
 
-  toggleLanguage(language: string) {
-    this.currentLanguage = language;
-    // Add any additional logic for language change here
+  constructor(private translocoService: TranslocoService) {}
+
+  toggleLanguage(lang: string) {
+    this.currentLanguage = lang;
+    this.translocoService.setActiveLang(this.currentLanguage);
   }
 }
