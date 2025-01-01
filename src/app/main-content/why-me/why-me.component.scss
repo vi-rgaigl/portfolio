@@ -1,8 +1,23 @@
 @import "./../../shared/styles/_variables.scss";
 @import "./../../shared/styles/_mixin.scss";
 
+
 section {
     height: 100%;
-    width: 100vw;
-    background-color:cadetblue ;
+    width: $c-width;
+    @include bg-main();
+
+    .section-title {
+        position: relative;   
+        @include d-flex(row, center, center, 0);
+        height: 60%;
+        width: $h-width;
+
+        .title {
+            @include font(48px, 700);
+            @include font-outline();
+            transform: rotate(-90deg);
+            white-space: nowrap;
+        }
+    }
 }

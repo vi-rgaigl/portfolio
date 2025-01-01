@@ -9,7 +9,7 @@ import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  currentLanguage: string = 'de';
+  currentLanguage: string = 'en';
 
   constructor(private translocoService: TranslocoService) {}
 

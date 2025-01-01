@@ -4,9 +4,9 @@
         <a href="https://www.linkedin.com/in/regina-gaigl-417371228/" target="_blank"><div class="linkedin icon"></div></a>
         <a href="https://github.com/vi-rgaigl?tab=repositories" target="_blank"><div class="github icon"></div></a>
         <div class="language-toggle">
-            <div class="de lang" (click)="toggleLanguage('de')" [class.active]="currentLanguage === 'de'">DE</div>
+            <div class="lang" (click)="toggleLanguage('de')" [class.active]="currentLanguage == 'de'">DE</div>
             <div class="separator"></div>
-            <div class="en lang" (click)="toggleLanguage('en')" [class.active]="currentLanguage === 'en'">EN</div>
+            <div class="lang" (click)="toggleLanguage('en')" [class.active]="currentLanguage == 'en'">EN</div>
         </div>
     </header>
     <div class="arrow"></div>
