@@ -1,7 +1,18 @@
 {
     "contact": "Contact",
+    "contact-me": "Contact me",
+    "i-am": "I am",
     "my-work": "My Work",
     "skills": "Skills",
-    "why-me": "Why me?"
+    "my-skills": "My Skill Set",
+    "why-me": "Why me?",
+    "motivation": "I am curious, creative and interested in developing user-friendly and engaging web applications. As a frontend developer, I want to create innovative solutions that improve the user experience and provide an intuitive approach to the subject.",
+    "city": "Munich",
+    "located-in": "located in",
+    "work-remote": "open to remote work",
+    "open-to-challenge": "open to new challenges",
+    "mindset": "The IT Landscape is countinously evolving and I am eager to learn and adapt to new technologies and frameworks. Staying up-to-date with the latest trends and best practices is essential to me. So I motivated to expand my knowledge and skills in the field of web development.",
+    "skills-frontend": "So far I have gained experience in the following technologies and tools:",
+    "open-for-new-skills": "I am open to learning new technologies and tools and I am looking forward to expanding my skill set."
 }
 

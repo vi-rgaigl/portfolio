@@ -1,6 +1,17 @@
 {
     "contact": "Kontakt",
+    "contact-me": "Kontaktiere mich",
+    "i-am": "Ich bin",
     "my-work": "Projekte",
     "skills": "Skills",
-    "why-me": "Über mich"
+    "my-skills": "Meine Fähigkeiten",
+    "why-me": "Über mich",
+    "motivation": "Ich bin neugierig, kreativ und daran interessiert, benutzerfreundliche und ansprechende Webanwendungen zu entwickeln. Als Frontend-Entwicklerin möchte ich innovative Lösungen schaffen, die die User-Experience verbessern und damit einen intuitiven Zugang zum Thema bietet.",
+    "city": "München",
+    "located-in": "wohne in",
+    "work-remote": "offen für Remote-Arbeit",
+    "open-to-challenge": "offen für neue Herausforderungen",
+    "mindset": "Die IT-Landschaft entwickelt sich kontinuierlich weiter und ich bin bestrebt, neue Technologien und Frameworks zu erlernen und mich anzupassen. Es ist mir wichtig, stets auf dem neuesten Stand der Trends und Best Practices zu bleiben. Daher bin ich motiviert, mein Wissen und meine Fähigkeiten im Bereich der Webentwicklung zu erweitern.",
+    "skills-frontend": "Bisher habe ich Erfahrung mit den folgenden Technologien und Tools gesammelt:",
+    "open-for-new-skills": "Ich bin offen für das Erlernen neuer Technologien und Werkzeuge und freue mich darauf, meine Fähigkeiten zu erweitern."
 }
