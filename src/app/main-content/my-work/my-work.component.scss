@@ -1,5 +1,6 @@
 @import "./../../shared/styles/_variables.scss";
 @import "./../../shared/styles/_mixin.scss";
+@import "./../../shared/styles/_standards.scss";
 
 section {
     display: flex;
@@ -39,6 +40,36 @@ section {
 
     .project-card {
         width: 100%;
+    }
+
+    .upcoming {
+        width: 100%;
+        @include d-flex(column, flex-start, $gap: 0);
+    }
+
+    .upcoming-headline {
+        width: 100%;
+        @include d-flex(row, flex-start, $gap: 32px);
+        padding-left: 48px;
+
+        .index {
+            @include font(64px, 700, $bg-card-green);
+            @include font-outline();
+        }
+    
+        .title {
+            @include font(38px, 500, $bg-green);
+            margin-left: 8px;
+        }
+    }
+
+    .upcoming-text {
+        width: 100%;
+        padding-left: 128px;      
+    }
+
+    .btn-line {
+        margin-top: 32px;
     }
 }
 

@@ -10,8 +10,18 @@
 
         <div class="content">
             @for(project of projects; track project) {
-                <app-project-card class="project-card" [project]="project"></app-project-card>
+            <app-project-card class="project-card" [project]="project"></app-project-card>
             }
+            <div class="upcoming">
+                <div class="upcoming-headline">
+                    <div class="index">3</div>
+                    <div class="title">{{ 'upcoming' | transloco}}</div>
+                </div>
+                <div class="upcoming-text">
+                    {{ 'upcoming-text' | transloco}}
+                </div>
+                <a href="#footer"><div class="btn-primary btn-line">Let's talk</div></a>
+            </div>
         </div>
     </div>
 </section>
