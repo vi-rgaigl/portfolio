@@ -2,8 +2,54 @@
 @import "./../../shared/styles/_mixin.scss";
 
 section {
-    height: 200%;
-    width: 100vw;
-    background-color:darksalmon ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: $c-width;
     overflow-y: scroll;
+    @include bg-main();
+
+    .section-content {
+        @include d-flex(row, flex-start, flex-start, 0);
+        color:white;
+        margin-top: 8vh;
+
+        .section-title {
+            @include d-flex($justify: flex-start, $gap: 0);
+            width: $h-width;
+            height: 100%;
+            margin-top: 8vh;
+    
+            .title {
+                @include font(48px, 700);
+                @include font-outline();
+                transform: rotate(-90deg);
+                white-space: nowrap;
+            }
+        }
+    }  
+
+}
+
+.content {
+    width: 100%;
+    max-width: 75%;
+    @include d-flex(column, flex-start, $gap: 64px);
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+
+.arrow {
+    max-width: 90%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    &:hover {
+        @include arrow-blur();
+    }
 }

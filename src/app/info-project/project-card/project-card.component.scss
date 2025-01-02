@@ -1,0 +1,10 @@
+@import "./../../shared/styles/_variables";
+@import "./../../shared/styles/_mixin";
+@import "./../../shared/styles/_standards";
+
+.card-container {
+    height: 54vh;
+    width: 100%;
+    background: $gb-card-green;
+    border-radius: 32px;
+}

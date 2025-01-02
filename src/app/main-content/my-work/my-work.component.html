@@ -1,1 +1,17 @@
-<section id="my-work">My Work</section>
+<section id="my-work">
+    <div class="arrow">
+        <a href="#skills"><img src="assets/icons/arrow-left.png" alt="arrow to skills"></a>
+        <a href="#footer"><img src="assets/icons/arrow-right.png" alt="arrow to contact"></a>
+    </div>
+    <div class="section-content">
+        <div class="section-title">
+            <span class="title">{{ 'my-work' | transloco}}</span>
+        </div>
+
+        <div class="content">
+            @for(item of [0,1,2]; track item) {
+                <app-project-card class="project-card">{{item}}</app-project-card>
+            }
+        </div>
+    </div>
+</section>
