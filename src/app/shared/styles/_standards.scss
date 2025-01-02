@@ -40,3 +40,49 @@ a {
         cursor: not-allowed;
     }
 }
+
+input[type="text"], input[type="email"] {
+    all: unset;
+    width: 100%;
+    color: white;
+    border: 1px solid $bg-green;
+    border-radius: 28px;
+    height: 56px;
+    padding: 0 24px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: $bg-light-green;
+    opacity: 0.2;
+}
+
+textarea {
+    all: unset;
+    width: 100%;
+    color: white;
+    border: 1px solid $bg-green;
+    border-radius: 28px;
+    height: 200px;
+    padding: 24px;
+}
+
+// input[type="checkbox"] {
+//     display: none;
+// }
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    margin-bottom: -4px;
+    background-image: url('./../../../assets/icons/cb-default.png');
+    @include img-cover();
+}
+
+input[type="checkbox"]:hover {
+    background-image: url('./../../../assets/icons/cb-hover.png');
+}
+
+input[type="checkbox"]:checked {
+    background-image: url('./../../../assets/icons/cb-click-green.png');
+}

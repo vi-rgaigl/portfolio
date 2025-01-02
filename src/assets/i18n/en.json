@@ -19,6 +19,16 @@
     "technologies": "Technologies I have used",
     "what-i-learned": "What I have learned",
     "upcoming": "Upcoming projects",
-    "upcoming-text": "Stay tuned for more projects coming soon!"
+    "upcoming-text": "Stay tuned for more projects coming soon!",
+    "your-name": "Your Name",
+    "your-email": "Your e-mail",
+    "your-message": "Your message",
+    "send": "Send",
+    "read": "I've read the",
+    "accept-policy": "and agree to the processing of my data as outlined.",
+    "work-together": "Let's work together.",
+    "contact-text": "Wheather your project involves developing a new application or improving an existing one, I am here to help you. Feel free to contact me for any inquiries or project requests.",
+    "legal-notice": "Legal Notice",
+    "privacy": "Privacy Policy"
 }
 

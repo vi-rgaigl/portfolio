@@ -1,1 +1,82 @@
-<section id="contact">Contact Me</section>
+<section id="contact">
+    <div class="section-content">
+        <div class="section-title">
+            <span class="title">{{ 'contact-me' | transloco}}</span>
+        </div>
+
+        <div class="content">
+            <div class="form">
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                  <div>
+                    <input
+                      type="text"
+                      formControlName="name"
+                      placeholder="{{ 'your-name' | transloco }}"
+                      onfocus="this.placeholder = ''"
+                      [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+                    />
+                    @if (submitted && f['name'].errors) {
+                    <div class="invalid-feedback">
+                      @if (f['name'].errors['required']) {
+                      <div>Name is required</div>
+                      }
+                    </div>
+                    }
+                  </div>
+              
+              
+                  <div>
+                    <input
+                      type="text"
+                      formControlName="email"
+                      placeholder="{{ 'your-email' | transloco }}"
+                      onfocus="this.placeholder = ''"
+                      [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+                    />
+                    @if (submitted && f['email'].errors) {
+                    <div class="invalid-feedback">
+                      @if (f['email'].errors['required']) {
+                      <div>Email is required</div>
+                      }
+                      @if (f['email'].errors['email']) {
+                      <div>Email is invalid</div>
+                      }
+                    </div>
+                    }
+                  </div>
+
+                  <div>
+                    <textarea formControlName="message" placeholder="{{ 'your-message' | transloco }}" onfocus="this.placeholder = ''"></textarea>
+                  </div>
+              
+              
+                  <div class="form-check">
+                    
+                    <input
+                      type="checkbox"
+                      formControlName="acceptTerms"
+                      class="form-check-input"
+                      [ngClass]="{ 'is-invalid': submitted && f['acceptTerms'].errors }"
+                    />
+                    <label>
+                        <span> {{ 'read' | transloco}}</span>
+                        <a href="privacy-policy"> {{ 'privacy-policy' | transloco}} </a>
+                        <span>{{ 'accept-policy' | transloco}}</span>
+                    </label>
+
+                    @if (submitted && f['acceptTerms'].errors) {
+                    <div class="invalid-feedback">Accept Terms is required</div>
+                    }
+                  </div>
+              
+                  <div class="form-group">
+                    <button type="submit" class="btn-primary">{{'send' | transloco}}</button>
+                  </div>
+                </form>
+            </div>
+            <div class="information">
+                Infos
+            </div>
+        </div>
+    </div>
+</section>
