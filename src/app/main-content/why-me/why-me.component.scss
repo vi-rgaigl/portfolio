@@ -12,7 +12,7 @@ section {
     @include bg-main();
 
     .section-content {
-        margin-top: 12%;
+        margin-top: 14vh;
         @include d-flex(row, flex-start, flex-start, 0);
         color:white;
 
