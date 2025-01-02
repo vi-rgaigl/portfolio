@@ -67,11 +67,9 @@ header {
     }
 }
 
-
-.container {
+.img-container {
     position: relative;
     height: 100vh;
-    width: 100%;
     @include d-flex(column, center, space-between, 0);
     text-align: end;
 
@@ -87,13 +85,26 @@ header {
 
     .text-content {
         position: relative;
+        height: 24%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         z-index: 1;
         margin-right: 84px;
         transform: translateY(68%);
+
+        .arrow {
+            padding-bottom: 10%;
+            &:hover {
+                @include arrow-blur();
+            }
+        }
+
         .headline {
             @include font(80px, 700, $bg-green);
             width: 100%;
         }
+
         .subline {
             @include font(50px, 600, $bg-green);
             @include font-outline();

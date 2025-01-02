@@ -5,21 +5,22 @@
 
 section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
     width: $c-width;
     @include bg-main();
 
     .section-content {
-        height: 80%;
-        margin-top: 8%;
+        margin-top: 12%;
+        margin-bottom: 12%;
         @include d-flex(row, flex-start, flex-start, 0);
         color:white;
 
         .section-title {
-            height: 240px;
-            @include d-flex($gap: 0);
+            @include d-flex($justify: flex-start, $gap: 0);
             width: $h-width;
+            height: 100%;
+            margin-top: 72px;
     
             .title {
                 @include font(48px, 700);
@@ -32,8 +33,8 @@ section {
 }
 
 .content {
-    height: 60%;
-    width: 60%;
+    height: 100%;
+    width: 68%;
     @include d-flex(column, center, flex-start, 32px);
 
     h1 {
@@ -95,5 +96,16 @@ section {
 
 .btn-line {
     width: 100%;
+    margin-top: 24px;
     @include d-flex(row, flex-end, center, 32px);
+}
+
+.arrow {
+    max-width: 90%;
+    display:flex;
+    justify-content: flex-end;
+
+    &:hover {
+        @include arrow-blur();
+    }
 }

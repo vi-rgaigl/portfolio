@@ -27,3 +27,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@mixin arrow-blur() {
+    filter: blur(1px);
+}
