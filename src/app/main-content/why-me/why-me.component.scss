@@ -1,23 +1,99 @@
 @import "./../../shared/styles/_variables.scss";
 @import "./../../shared/styles/_mixin.scss";
+@import "./../../shared/styles/_standards.scss";
 
 
 section {
+    display: flex;
+    flex-direction: row;
     height: 100%;
     width: $c-width;
     @include bg-main();
 
-    .section-title {
-        position: relative;   
-        @include d-flex(row, center, center, 0);
-        height: 60%;
-        width: $h-width;
+    .section-content {
+        height: 80%;
+        margin-top: 8%;
+        @include d-flex(row, flex-start, flex-start, 0);
+        color:white;
 
-        .title {
-            @include font(48px, 700);
-            @include font-outline();
-            transform: rotate(-90deg);
-            white-space: nowrap;
+        .section-title {
+            height: 240px;
+            @include d-flex($gap: 0);
+            width: $h-width;
+    
+            .title {
+                @include font(48px, 700);
+                @include font-outline();
+                transform: rotate(-90deg);
+                white-space: nowrap;
+            }
+        }
+    }  
+}
+
+.content {
+    height: 60%;
+    width: 60%;
+    @include d-flex(column, center, flex-start, 32px);
+
+    h1 {
+        @include font(48px, 700, $bg-green);   
+    }
+
+    .motivation {
+        hyphens: auto;
+        text-align: justify;
+    }
+}
+
+
+.infos {
+    @include d-flex(row, center, center, 32px);
+
+    .icon {
+        height: 120px;
+        width: 200px;
+        @include d-flex(column, flex-end, center, 0);
+
+        .d-flex {
+            @include d-flex(column, flex-end, center, 0);
+        }
+
+        .icon-city {
+            height: 100px;
+            width: 100px;
+            margin-bottom: -20px;
+            background-image: url('./../../../assets/icons/location.png');
+            @include img-cover();
+            &:hover {
+                background-image: url('./../../../assets/icons/location-hover.png');
+            }
+        }
+        .icon-remote {
+            height: 100px;
+            width: 100px;    
+            margin-bottom: 16px;     
+            img {
+                height: 80px;
+                width: 80px;
+                @include img-cover();
+            }
+        }
+
+        .icon-challange {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 16px;
+            img {
+                height: 56px;
+                width: 56px;
+                @include img-cover();
+            }
         }
     }
+}
+
+.btn-line {
+    width: 100%;
+    @include d-flex(row, flex-end, center, 32px);
 }
