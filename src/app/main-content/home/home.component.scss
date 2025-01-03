@@ -4,11 +4,15 @@
 section {
     height: 100%;
     width: $c-width;
+    padding-top: $h-height;
     @include bg-main();
 }
 
 header {
-    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: $h-height;
     @include d-flex(row, flex-end, center, 20px);
     margin-right: 84px;
 

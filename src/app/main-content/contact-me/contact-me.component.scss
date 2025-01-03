@@ -4,7 +4,8 @@
 
 section {
     height: 100%;
-    width: $c-width;
+    width: calc($c-width - $h-width);
+    padding-top: $h-height;
     @include bg-main();
 }
 

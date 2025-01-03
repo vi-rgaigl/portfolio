@@ -1,5 +1,8 @@
+@import './../../shared/styles/_variables.scss';
+
 .main-content {
   display: flex;
   flex-direction: row;
   height: 100%;
+  margin-left: $h-width;
 }

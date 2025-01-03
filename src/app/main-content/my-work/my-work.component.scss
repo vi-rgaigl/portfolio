@@ -8,6 +8,7 @@ section {
     justify-content: flex-start;
     height: 100%;
     width: $c-width;
+    padding-top: $h-height;
     overflow-y: scroll;
     @include bg-main();
 
@@ -77,7 +78,7 @@ section {
 .arrow {
     max-width: 90%;
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 100px;
 
     &:hover {

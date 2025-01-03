@@ -9,6 +9,7 @@ section {
     justify-content: space-between;
     height: 100%;
     width: $c-width;
+    padding-top: $h-height;
     @include bg-main();
 
     .section-content {
@@ -104,7 +105,7 @@ section {
 .arrow {
     max-width: 90%;
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: 100px;
 
     &:hover {
