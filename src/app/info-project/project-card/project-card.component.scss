@@ -58,3 +58,21 @@
         margin-top: 32px;
     }
 }
+
+
+@media (max-width: 1200px) {
+    .body {
+        .info {
+            flex-direction: column;
+            gap: 0;
+            .screenshot-container {
+                width: 100%;
+                @include d-flex(column, center, center, 8px);
+            }
+            .btn-line {
+                gap: 32px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
