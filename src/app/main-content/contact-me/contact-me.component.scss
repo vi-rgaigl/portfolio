@@ -39,7 +39,7 @@ section {
     width: 40%;
 
     form {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -50,11 +50,50 @@ section {
         color: white;
 
         &:hover {
-            color: $bg-green;
+            text-decoration: underline;
         }
+    }
+
+    .btn-line {
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
+
+.informations {
+    width: 40%;
+    height: 68vh;
+    margin-right: 4%;
+    @include d-flex(column, space-between, flex-end);
+    text-align: right;
+    
+    a:hover {
+        color: $bg-light-green;
+    }
+    a:active {
+        color: $bg-green;
+        text-decoration: underline;
+    }
+
+    .contact-infos {
+        @include d-flex(column, flex-end, flex-end);
+
+        .work-together {
+            @include font(24px, 400, $bg-light-green);
+        }
+    }
+
+    .links {
+        @include d-flex(column, flex-end, flex-end, 24px);
+    }
+
+    .arrow {
+        &:hover {
+            @include arrow-blur();
+        }
+    }
+}
 
 .is-invalid {
     border: 1px solid red;

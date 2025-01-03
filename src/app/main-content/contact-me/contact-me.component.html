@@ -27,7 +27,7 @@
               
                   <div>
                     <input
-                      type="text"
+                      type="email"
                       formControlName="email"
                       placeholder="{{ 'your-email' | transloco }}"
                       onfocus="this.placeholder = ''"
@@ -46,12 +46,9 @@
                   </div>
 
                   <div>
-                    <textarea formControlName="message" placeholder="{{ 'your-message' | transloco }}" onfocus="this.placeholder = ''"></textarea>
-                  </div>
-              
-              
-                  <div class="form-check">
-                    
+                    <textarea rows="15" placeholder="{{ 'your-message' | transloco }}" onfocus="this.placeholder = ''"></textarea>
+                  </div>           
+                  <div class="form-check">    
                     <input
                       type="checkbox"
                       formControlName="acceptTerms"
@@ -60,7 +57,7 @@
                     />
                     <label>
                         <span> {{ 'read' | transloco}}</span>
-                        <a href="privacy-policy"> {{ 'privacy-policy' | transloco}} </a>
+                        <a href="privacy-policy"> {{ 'privacy' | transloco}} </a>
                         <span>{{ 'accept-policy' | transloco}}</span>
                     </label>
 
@@ -69,13 +66,26 @@
                     }
                   </div>
               
-                  <div class="form-group">
+                  <div class="form-group btn-line">
                     <button type="submit" class="btn-primary">{{'send' | transloco}}</button>
                   </div>
                 </form>
             </div>
-            <div class="information">
-                Infos
+            <div class="informations">
+                <div class="contact-infos">
+                    <div class="work-together">{{'work-together' | transloco}}</div>
+                    <div class="contact-text">{{'contact-text' | transloco}}</div>
+                    <div class="contact-email"><a href="mailto:regina.gaigl@gmail.com">&#9993; E-Mail: regina.gaigl&#64;gmail.com</a></div>
+                    <div class="contact-phone"><a href="tel:+4915203247100">&#9742; Tel: +49 1520 324 71 00</a></div>
+                </div>
+                <div class="arrow">
+                    <a href="#header"><img src="assets/icons/arrow-left.png" alt="back to start"></a>
+                </div>
+                <div class="links">
+                    <a href="legal-notice">{{'legal-notice' | transloco}}</a>
+                    <a href="privacy-policy">{{'privacy' | transloco}}</a>
+                    <a href="#">&#169; Regina Gaigl 2025</a>
+                </div>
             </div>
         </div>
     </div>
