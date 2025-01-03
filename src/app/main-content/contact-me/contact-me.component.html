@@ -12,7 +12,7 @@
                       type="text"
                       formControlName="name"
                       placeholder="{{ 'your-name' | transloco }}"
-                      onfocus="this.placeholder = ''"
+                      class="hide-placeholder"
                       [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
                     />
                     @if (submitted && f['name'].errors) {
@@ -29,8 +29,8 @@
                     <input
                       type="email"
                       formControlName="email"
-                      placeholder="{{ 'your-email' | transloco }}"
-                      onfocus="this.placeholder = ''"
+                      placeholder="{{ 'your-email' | transloco }}"                    
+                      class="hide-placeholder"
                       [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
                     />
                     @if (submitted && f['email'].errors) {
@@ -46,8 +46,9 @@
                   </div>
 
                   <div>
-                    <textarea rows="15" placeholder="{{ 'your-message' | transloco }}" onfocus="this.placeholder = ''"></textarea>
-                  </div>           
+                    <textarea rows="15" placeholder="{{ 'your-message' | transloco }}" class="hide-placeholder"></textarea>
+                  </div>       
+
                   <div class="form-check">    
                     <input
                       type="checkbox"

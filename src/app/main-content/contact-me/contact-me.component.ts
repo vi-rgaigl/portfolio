@@ -27,6 +27,15 @@ export class ContactMeComponent {
 
   constructor(private formBuilder: FormBuilder) {}
 
+
+  onFocus(): void {
+    console.log('Focus');
+  }
+
+  onFocusOut(): void {
+    console.log('Focus Out');
+  }
+
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       name: ['', Validators.required],
