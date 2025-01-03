@@ -2,7 +2,15 @@
 @import "./../../styles/_mixin.scss";
 
 section {
-    height: 100%;
+    display: none;
+    height: 100vh;
     width: $h-width;
     background-color: $bg-green;
+
+}
+
+@media (max-width: 820px) {
+    section {
+        display: flex;
+    }
 }

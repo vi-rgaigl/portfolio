@@ -7,7 +7,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
-import { TranslocoModule } from '@jsverse/transloco';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-contact-me',
@@ -27,7 +27,7 @@ export class ContactMeComponent {
   submitted = false;
   emailFocused = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder,  private translocoService: TranslocoService) {}
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -72,20 +72,21 @@ export class ContactMeComponent {
   }
 
   getErrorMessage(controlName: string, errors: any): string {
+    const lang = this.translocoService.getActiveLang();
     if (errors.required) {
       switch (controlName) {
         case 'name':
-          return 'Name is required';
+          return lang === 'de' ? 'Name ist erforderlich' : 'Name is required';
         case 'email':
-          return 'Email is required';
+          return lang === 'de' ? 'E-Mail ist erforderlich' : 'Email is required';
         case 'message':
-          return 'Message is required';
+          return lang === 'de' ? 'Nachricht ist erforderlich' : 'Message is required';
         default:
-          return 'This field is required';
+          return lang === 'de' ? 'Dieses Feld ist erforderlich' : 'This field is required';
       }
     }
     if (errors.email) {
-      return 'Email is invalid';
+      return lang === 'de' ? 'E-Mail ist ungültig' : 'Email is invalid';
     }
     return '';
   }

@@ -34,9 +34,8 @@
         margin-right: 48px;
         .screenshot {
             height: 20vh;
-            filter: grayscale(60%);
             &:hover {
-                filter: grayscale(0%);
+                filter: brightness(80%);
             }
         }
     }

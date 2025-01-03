@@ -3,12 +3,11 @@
 @import "./../../shared/styles/_standards.scss";
 
 section {
-    height: 100%;
-    width: calc($c-width - $h-width);
+    height: 100vh;
+    width: $c-width;
     padding-top: $h-height;
     @include bg-main();
 }
-
 
 .section-content {
     @include d-flex(row, flex-start, flex-start, 0);
