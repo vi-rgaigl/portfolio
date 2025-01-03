@@ -1,6 +1,4 @@
-
-$h-width: 180px;
-$c-width: calc(100vw - #{$h-width});
+$c-width: calc(100vw - #{var(--h-width)});
 
 $h-height: 80px;
 

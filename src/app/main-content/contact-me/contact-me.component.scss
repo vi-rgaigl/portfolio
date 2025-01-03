@@ -15,7 +15,7 @@ section {
 
     .section-title {
         @include d-flex($justify: flex-start, $gap: 0);
-        width: $h-width;
+        width: var(--h-width);
         height: 100%;
         margin-top: 24vh;
 

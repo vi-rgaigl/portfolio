@@ -4,7 +4,7 @@
 section {
     @include d-flex(column, space-between, center, 0px);
     height: 100vh;
-    width: $h-width;
+    width: var(--h-width);
     background-color: $bg-green;
 }
 

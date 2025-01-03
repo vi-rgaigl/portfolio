@@ -4,7 +4,7 @@
 section {
     display: none;
     height: 100vh;
-    width: $h-width;
+    width: var(--h-width);
     background-color: $bg-green;
 
 }

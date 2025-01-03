@@ -21,6 +21,16 @@
   background: #547800; 
 }
 
+:root {
+  --h-width: 180px;
+}
+
+@media (max-width: 1200px) {
+  :root {
+      --h-width: 150px;
+  }
+}
+
 /* quantico-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

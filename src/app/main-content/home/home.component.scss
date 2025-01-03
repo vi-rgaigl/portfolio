@@ -113,3 +113,16 @@ section {
         }
     }
 }
+
+
+@media (max-width: 1200px) {
+    .img-container {
+        .avatar {
+            height: 70%;
+            bottom: 100px;
+        }
+        .text-content {
+            margin-right: 46px;
+        }
+    }
+}

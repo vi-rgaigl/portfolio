@@ -4,5 +4,5 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
-  margin-left: $h-width;
+  margin-left: var(--h-width);
 }

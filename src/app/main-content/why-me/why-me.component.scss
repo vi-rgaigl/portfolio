@@ -19,7 +19,7 @@ section {
 
         .section-title {
             @include d-flex($justify: flex-start, $gap: 0);
-            width: $h-width;
+            width: var(--h-width);
             height: 100%;
             margin-top: 72px;
     
@@ -110,5 +110,12 @@ section {
 
     &:hover {
         @include arrow-blur();
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .infos {
+        gap: 0;
     }
 }
