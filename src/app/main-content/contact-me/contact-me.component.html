@@ -25,7 +25,8 @@
                       formControlName="email"
                       [placeholder]="submitted && f['email'].errors ? getErrorMessage('email', f['email'].errors) : ('your-email' | transloco)"                    
                       class="form-control hide-placeholder"            
-                      [ngClass]="{ 'is-invalid-input-email': submitted && f['email'].errors }"
+                      [ngClass]="{ 'is-invalid-input-email': emailFocused && f['email'].invalid }"
+                      (focus)="onFocus('email')"
                     />
                   </div>
 

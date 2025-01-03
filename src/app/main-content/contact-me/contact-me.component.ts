@@ -25,6 +25,7 @@ export class ContactMeComponent {
   });
 
   submitted = false;
+  emailFocused = false;
 
   constructor(private formBuilder: FormBuilder) {}
 
@@ -38,8 +39,10 @@ export class ContactMeComponent {
 
     // Listen for value changes on the email control
     this.form.get('email')?.valueChanges.subscribe(() => {
-      console.log('Email value changed');
-      this.submitted = false; // Reset submitted state on value change
+      const emailControl = this.form.get('email');
+      if (emailControl?.invalid && (emailControl.dirty || emailControl.touched)) {
+        this.submitted = false;
+      }
     });
   }
 
@@ -55,6 +58,12 @@ export class ContactMeComponent {
     }
 
     console.log(JSON.stringify(this.form.value, null, 2));
+  }
+
+  onFocus(controlName: string) {
+    if (controlName === 'email') {
+      this.emailFocused = true;
+    }
   }
 
   onReset(): void {
