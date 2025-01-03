@@ -99,6 +99,20 @@ section {
     }
 }
 
-.is-invalid {
-    border: 1px solid red;
+.is-invalid-input-text, .is-invalid-input-email, .is-invalid-textarea {
+    border: 1px solid red !important;
+    &::placeholder {
+        color: red !important;
+        opacity: 0.8 !important;
+    }
+}
+
+.is-invalid-checkbox {
+    background-image: url('./../../../assets/icons/cb-error.png') !important;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
 }

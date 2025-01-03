@@ -6,6 +6,11 @@ a {
 button {
     all: unset;
     cursor: pointer;
+
+    // &:disabled {
+    //     cursor: not-allowed;
+    //     background-color: $bg-grey;
+    // }
 }
 
 .btn-primary {
@@ -16,10 +21,13 @@ button {
     cursor: pointer;
 
     &:hover {
-        background: linear-gradient($bg-green, $bg-dark-green);;
+        background: linear-gradient($bg-green, $bg-dark-green);
+        &:disabled {
+            background: $bg-grey;
+        }
     }
 
-    .inactive {
+    &:disabled {
         background-color: $bg-grey;
         cursor: not-allowed;
     }
@@ -38,7 +46,7 @@ button {
         border: 1px solid $bg-light-green;
     }
 
-    .inactive {
+    &:disabled {
         border: 1px solid $bg-dark-grey;
         color: $bg-dark-grey;
         cursor: not-allowed;

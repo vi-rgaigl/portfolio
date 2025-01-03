@@ -7,21 +7,15 @@
         <div class="content">
             <div class="form">
                 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-                  <div>
+
+                  <div class="form-group">
                     <input
                       type="text"
                       formControlName="name"
-                      placeholder="{{ 'your-name' | transloco }}"
-                      class="hide-placeholder"
-                      [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
-                    />
-                    @if (submitted && f['name'].errors) {
-                    <div class="invalid-feedback">
-                      @if (f['name'].errors['required']) {
-                      <div>Name is required</div>
-                      }
-                    </div>
-                    }
+                      [placeholder]="submitted && f['name'].errors ? getErrorMessage('name',f['name'].errors) : ('your-name' | transloco)"
+                      class="form-control hide-placeholder"
+                      [ngClass]="{ 'is-invalid-input-text': submitted && f['name'].errors }"
+                    />         
                   </div>
               
               
@@ -29,24 +23,14 @@
                     <input
                       type="email"
                       formControlName="email"
-                      placeholder="{{ 'your-email' | transloco }}"                    
-                      class="hide-placeholder"
-                      [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+                      [placeholder]="submitted && f['email'].errors ? getErrorMessage('email', f['email'].errors) : ('your-email' | transloco)"                    
+                      class="form-control hide-placeholder"            
+                      [ngClass]="{ 'is-invalid-input-email': submitted && f['email'].errors }"
                     />
-                    @if (submitted && f['email'].errors) {
-                    <div class="invalid-feedback">
-                      @if (f['email'].errors['required']) {
-                      <div>Email is required</div>
-                      }
-                      @if (f['email'].errors['email']) {
-                      <div>Email is invalid</div>
-                      }
-                    </div>
-                    }
                   </div>
 
                   <div>
-                    <textarea rows="15" placeholder="{{ 'your-message' | transloco }}" class="hide-placeholder"></textarea>
+                    <textarea formControlName="message" rows="15" [placeholder]="submitted && f['message'].errors ? getErrorMessage('message', f['message'].errors) : ('your-message' | transloco)" class="form-control hide-placeholder" [ngClass]="{ 'is-invalid-textarea': submitted && f['message'].errors }"></textarea>
                   </div>       
 
                   <div class="form-check">    
@@ -54,7 +38,7 @@
                       type="checkbox"
                       formControlName="acceptTerms"
                       class="form-check-input"
-                      [ngClass]="{ 'is-invalid': submitted && f['acceptTerms'].errors }"
+                      [ngClass]="{ 'is-invalid-checkbox': submitted && f['acceptTerms'].errors }"
                     />
                     <label>
                         <span> {{ 'read' | transloco}}</span>
@@ -68,7 +52,7 @@
                   </div>
               
                   <div class="form-group btn-line">
-                    <button type="submit" class="btn-primary">{{'send' | transloco}}</button>
+                    <button type="submit" class="btn-primary" [disabled]="!form.valid">{{'send' | transloco}}</button>
                   </div>
                 </form>
             </div>

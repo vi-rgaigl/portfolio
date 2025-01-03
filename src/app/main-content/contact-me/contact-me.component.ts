@@ -1,25 +1,26 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  AbstractControl,
+  FormBuilder,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [
-    CommonModule,
-    TranslocoModule, 
-    ReactiveFormsModule
-  ],
+  imports: [CommonModule, TranslocoModule, ReactiveFormsModule],
   templateUrl: './contact-me.component.html',
-  styleUrl: './contact-me.component.scss'
+  styleUrl: './contact-me.component.scss',
 })
 export class ContactMeComponent {
-
   form: FormGroup = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
+    message: new FormControl(''),
     acceptTerms: new FormControl(false),
   });
 
@@ -27,28 +28,26 @@ export class ContactMeComponent {
 
   constructor(private formBuilder: FormBuilder) {}
 
-
-  onFocus(): void {
-    console.log('Focus');
-  }
-
-  onFocusOut(): void {
-    console.log('Focus Out');
-  }
-
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required],
       acceptTerms: [false, Validators.requiredTrue],
+    });
+
+    // Listen for value changes on the email control
+    this.form.get('email')?.valueChanges.subscribe(() => {
+      console.log('Email value changed');
+      this.submitted = false; // Reset submitted state on value change
     });
   }
 
-  get f(): { [key: string]: AbstractControl } {
+  get f() {
     return this.form.controls;
   }
 
-  onSubmit(): void {
+  onSubmit() {
     this.submitted = true;
 
     if (this.form.invalid) {
@@ -61,5 +60,24 @@ export class ContactMeComponent {
   onReset(): void {
     this.submitted = false;
     this.form.reset();
+  }
+
+  getErrorMessage(controlName: string, errors: any): string {
+    if (errors.required) {
+      switch (controlName) {
+        case 'name':
+          return 'Name is required';
+        case 'email':
+          return 'Email is required';
+        case 'message':
+          return 'Message is required';
+        default:
+          return 'This field is required';
+      }
+    }
+    if (errors.email) {
+      return 'Email is invalid';
+    }
+    return '';
   }
 }
