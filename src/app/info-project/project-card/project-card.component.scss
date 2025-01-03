@@ -76,3 +76,23 @@
         }
     }
 }
+
+@media (max-width: 980px) {
+    .card-container {
+        height: auto;
+        padding: 0px 0px 18px 0px;;
+    }
+    .headline {
+        height: 14vh;
+        @include d-flex(row, flex-start, center);
+        padding: 32px;;
+    
+        .index {
+            font-size: 64px;
+        }
+    
+        .title {
+           font-size: 56px;
+        }
+    }
+}

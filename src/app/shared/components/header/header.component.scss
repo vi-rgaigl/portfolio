@@ -20,7 +20,7 @@ nav {
 
     div {
         transform: rotate(-90deg);
-
+        white-space: nowrap;
         a {
             @include font($size: 30px);
             text-decoration: none;

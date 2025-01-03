@@ -2,12 +2,6 @@
     background: linear-gradient( #000000, #0b0a0a );
 }
 
-@mixin position-abs($top: 12px, $right: 80px) {
-    position: absolute;
-    top: $top;
-    right: $right;
-}
-
 @mixin font($size: 16px, $weight: 400, $color: black) {
     font-size: $size;
     font-weight: $weight;

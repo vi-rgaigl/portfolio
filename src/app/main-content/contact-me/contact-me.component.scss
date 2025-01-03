@@ -116,3 +116,11 @@ section {
     font-size: 14px;
     margin-top: 4px;
 }
+
+@media (max-width: 980px) {
+    .informations {
+        .arrow {
+            display: none;
+        }
+    }
+}
