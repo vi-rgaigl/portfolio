@@ -151,3 +151,9 @@ section {
         width: 48%;
     }
 }
+
+@media (max-width: 820px) {
+    section {
+        width: 100vw;
+    }
+}

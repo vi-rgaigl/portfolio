@@ -1,11 +1,24 @@
-<section id="header">
-    
+<section id="header">  
     <nav>
         <a href="#home"><img src="assets/img/initial.png" alt="Logo"></a>
-        <div><a href="#why-me">{{ 'why-me' | transloco}}</a></div>
-        <div><a href="#skills">{{ 'skills' | transloco}}</a></div>
-        <div><a href="#my-work">{{ 'my-work' | transloco}}</a></div>
-        <div><a href="#contact">{{ 'contact' | transloco}}</a></div>   
-    </nav>
+        <div class="menu-link"><a href="#why-me">{{ 'why-me' | transloco}}</a></div>
+        <div class="menu-link"><a href="#skills">{{ 'skills' | transloco}}</a></div>
+        <div class="menu-link"><a href="#my-work">{{ 'my-work' | transloco}}</a></div>
+        <div class="menu-link"><a href="#contact">{{ 'contact' | transloco}}</a></div>
 
+        <div class="mobile-burger" (click)="toggleMenu()">
+            <img src="assets/icons/burger.png" alt="Mobile Menu">
+        </div>
+        <div class="mobile-menu" (click)="toggleMenu()" [ngClass]="{ 'show-menu': isMenuOpen }">
+            <div class="mobile-link"><a href="#why-me">{{ 'why-me' | transloco}}</a></div>
+            <div class="mobile-link"><a href="#skills">{{ 'skills' | transloco}}</a></div>
+            <div class="mobile-link"><a href="#my-work">{{ 'my-work' | transloco}}</a></div>
+            <div class="mobile-link"><a href="#contact">{{ 'contact' | transloco}}</a></div>
+            <div class="language-toggle">
+                <div class="lang" (click)="toggleLanguage('de')">DE</div>
+                <div class="separator"></div>
+                <div class="lang" (click)="toggleLanguage('en')">EN</div>
+            </div>
+        </div>
+    </nav>
 </section>

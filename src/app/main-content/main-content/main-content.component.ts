@@ -4,6 +4,7 @@ import { WhyMeComponent } from '../why-me/why-me.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { MyWorkComponent } from '../my-work/my-work.component';
 import { ContactMeComponent } from '../contact-me/contact-me.component';
+import { FooterComponent } from '../../shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-main-content',
@@ -13,7 +14,8 @@ import { ContactMeComponent } from '../contact-me/contact-me.component';
     WhyMeComponent,
     SkillsComponent,
     MyWorkComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    FooterComponent
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'

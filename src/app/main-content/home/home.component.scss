@@ -140,3 +140,13 @@ section {
         }
     }
 }
+
+
+@media (max-width: 820px) {
+    section {
+        width: 100vw;
+    }
+    .main-header {
+        display: none;
+    }
+}

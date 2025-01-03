@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/components/header/header.component";
-import { FooterComponent } from "./shared/components/footer/footer.component";
 import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
@@ -12,7 +11,6 @@ import { TranslocoModule } from '@jsverse/transloco';
     CommonModule, 
     RouterOutlet, 
     HeaderComponent, 
-    FooterComponent,
     TranslocoModule
   ],
   templateUrl: './app.component.html',
