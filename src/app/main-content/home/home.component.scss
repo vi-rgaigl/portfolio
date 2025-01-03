@@ -84,7 +84,7 @@ section {
     .avatar {
         position: absolute;
         height: 80%; 
-
+        bottom: 2%;
         img {
             height: 100%;
             width: auto;
@@ -126,13 +126,9 @@ section {
     .img-container {
         .avatar {
             height: 70%;
-            bottom: 100px;
         }
         .text-content {
             margin-right: 46px;
-        }
-        .arrow {
-            display: none;
         }
     }
 }
