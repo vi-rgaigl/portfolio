@@ -5,7 +5,7 @@
         <div class="title">{{ project.name }}</div>
     </div>
 
-    <div class="body">
+    <div class="body" [ngClass]="{ 'expanded': isExpanded }">
         <div class="info">
             <div class="info-text">
                 <div class="label"><img class="circle" src="assets/icons/circle.png">{{ 'about-project' | transloco }}</div>
@@ -22,5 +22,10 @@
                     <a [href]="project.link" target="_blank"><div class="btn-primary">Live Test</div></a>
                 </div>               
             </div>
-        </div>
+        </div>  
+    </div>
+    <div (click)="toggleExpand()" class="read-more">
+        <a href="#">{{ isExpanded ? ('show-less' | transloco) : ('show-more' | transloco) }}
+            <img [ngClass]="{ 'rotate': isExpanded }" src="assets/icons/down.png" alt="expand down">
+        </a>
     </div>

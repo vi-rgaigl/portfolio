@@ -57,6 +57,10 @@
         @include d-flex(row, space-evenly, center, 0);
         margin-top: 32px;
     }
+
+    .read-more {
+        display: none;
+    }
 }
 
 
@@ -93,6 +97,33 @@
     
         .title {
            font-size: 56px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+
+    .body {
+        height: 200px;
+        overflow: hidden;
+        transition: height 0.3s ease;
+
+        &.expanded {
+          height: auto;
+        }
+    }
+    .read-more {
+        width: 100%;
+        @include d-flex(row, center, center);
+        margin-top: 24px;
+        a {
+            @include font(16px, 400, $bg-green);
+            img {
+                height: 12px;
+                &.rotate {
+                    transform: rotate(180deg);
+                  }
+            }
         }
     }
 }
