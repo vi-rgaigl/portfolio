@@ -61,33 +61,31 @@ export class ContactMeComponent {
   }
 
   onSubmit(form: any) {
-    this.submitted = true;
-
+    this.submitted = true;  
     if (this.form.invalid) {
       return;
     }
-    this.postEmail(
-      form.value.name.toString(),
-      form.value.email.toString(),
-      form.value.message.toString()
-    )
-      .pipe(map((res) => res))
-      .subscribe(
-        (res) => {},
-        (error) => {
-          this.messageSentError = true;
-          this.form.reset();
-          setTimeout(() => {
-            this.messageSentError = false;
-          }, 3000);
-        },
-        () => {
-          this.messageSentSuccess = true;
-          setTimeout(() => {
-            this.messageSentSuccess = false;
-          }, 3000);
-        }
-      );
+    // für Email-Versand bitte die folgenden Zeilen aktivieren
+    // this.postEmail( form.value.name.toString(), form.value.email.toString(),
+    //   form.value.message.toString()
+    // )
+    //   .pipe(map((res) => res))
+    //   .subscribe(
+    //     (res) => {},
+    //     (error) => {
+    //       this.messageSentError = true;
+    //       this.form.reset();
+    //       setTimeout(() => {
+    //         this.messageSentError = false;
+    //       }, 3000);
+    //     },
+    //     () => {
+    //       this.messageSentSuccess = true;
+    //       setTimeout(() => {
+    //         this.messageSentSuccess = false;
+    //       }, 3000);
+    //     }
+    //   );
   }
 
   //Send an email using formspree.io account

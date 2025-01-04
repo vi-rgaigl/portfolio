@@ -21,10 +21,12 @@ nav {
     .menu-link {
         transform: rotate(-90deg);
         white-space: nowrap;
+
         a {
             @include font($size: 30px);
             text-decoration: none;
         }
+
         &:hover {
             @include font-outline($color: black);
         }
@@ -33,6 +35,7 @@ nav {
     .mobile-burger {
         display: none;
     }
+
     .mobile-menu {
         display: none;
     }
@@ -43,34 +46,46 @@ nav {
         position: absolute;
         top: 0;
         height: 86px;
-        width:100vw;
+        width: 100vw;
         flex-direction: row;
         justify-content: space-between;
         background: linear-gradient($bg-green, $bg-dark-green);
     }
+
     nav {
         margin-bottom: 0;
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
+
+        .mobile-logo {
+            display: flex;
+        }
+
         img {
             height: 86px;
-            padding:4px;
+            padding: 4px;
         }
-        .menu-link  {
+
+        .menu-link {
             display: none;
         }
+
         .mobile-burger {
-            display: block;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
             padding: 8px;
             cursor: pointer;
+
             img {
                 width: 56px;
                 height: 56px;
             }
-        }  
+        }
+
         .mobile-menu {
-            display: none;
+            display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
@@ -83,27 +98,57 @@ nav {
             padding: 24px 16px;
             border-bottom-left-radius: 32px;
             border-bottom-right-radius: 32px;
-            
+            transform: translateY(-216px);
+
             &.show-menu {
-                display: flex;
+                transform: translate(0);
+                animation: slideDown 0.25s ease-in-out;
             }
+
+            &.hide-menu {
+                transform: translateY(-216px);
+                animation: slideUp 0.25s ease-in-out;
+            }
+
             a {
                 @include font(18px, 400, $mobile-grey);
                 text-decoration: none;
                 padding: 8px;
             }
+
             .language-toggle {
-                @include d-flex(row, center, center, 8px); 
+                @include d-flex(row, center, center, 8px);
+
                 .lang {
                     @include font(18px, 400, $mobile-grey);
                     cursor: pointer;
                 }
+
                 .separator {
                     height: 16px;
                     border-left: 3px solid $mobile-grey;
                 }
             }
-        }     
+        }
     }
-   
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-216px);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(-216px);
+        }
+    }
 }
