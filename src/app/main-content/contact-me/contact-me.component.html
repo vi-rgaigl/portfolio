@@ -6,11 +6,12 @@
 
         <div class="content">
             <div class="form">
-                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <form [formGroup]="form" (ngSubmit)="onSubmit(form)">
 
                   <div class="form-group">
                     <input
-                      type="text"
+                      type="text" 
+                      name="name"
                       formControlName="name"
                       [placeholder]="submitted && f['name'].errors ? getErrorMessage('name',f['name'].errors) : ('your-name' | transloco)"
                       class="form-control hide-placeholder"
@@ -22,6 +23,7 @@
                   <div>
                     <input
                       type="email"
+                      name="email"
                       formControlName="email"
                       [placeholder]="submitted && f['email'].errors ? getErrorMessage('email', f['email'].errors) : ('your-email' | transloco)"                    
                       class="form-control hide-placeholder"            
@@ -31,7 +33,7 @@
                   </div>
 
                   <div>
-                    <textarea formControlName="message" rows="10" [placeholder]="submitted && f['message'].errors ? getErrorMessage('message', f['message'].errors) : ('your-message' | transloco)" class="form-control hide-placeholder" [ngClass]="{ 'is-invalid-textarea': submitted && f['message'].errors }"></textarea>
+                    <textarea name="message" formControlName="message" rows="10" [placeholder]="submitted && f['message'].errors ? getErrorMessage('message', f['message'].errors) : ('your-message' | transloco)" class="form-control hide-placeholder" [ngClass]="{ 'is-invalid-textarea': submitted && f['message'].errors }"></textarea>
                   </div>       
 
                   <div class="form-check">    
