@@ -175,3 +175,35 @@ section {
         
     }
 }
+
+
+@media (max-width: 420px) {
+    .img-container {
+        .avatar {
+            height: 40%;
+        }
+        .text-content {
+            .headline {
+                font-size: 60px;
+            }
+            .subline {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:380px) {
+    .img-container {
+        .text-content {
+            .headline {
+                font-size: 48px;
+            }
+            .subline {
+                font-size: 32px;
+            }
+        }
+    }
+}

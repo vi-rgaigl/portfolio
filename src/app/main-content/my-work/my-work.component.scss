@@ -126,3 +126,36 @@ section {
         width: 100vw;
     }
 }
+
+@media (max-width: 420px) {
+    section {
+        .section-content {
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+    }
+    .content {
+        .upcoming-headline {
+            padding-left: 0;
+            gap: 0;
+            .index {
+               font-size: 48px;
+            }
+            .title {
+               font-size: 32px;
+            }
+        }
+        .upcoming-text {
+            padding-left: 6px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    section {
+        .section-content {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+    }
+}

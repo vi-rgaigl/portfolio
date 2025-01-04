@@ -161,3 +161,16 @@ section {
         width: 100vw;
     }
 }
+
+@media (max-width: 680px) {
+    .infos {
+        width: 100%;
+        flex-direction: column;
+        .icon {
+            justify-content: flex-start;
+            .icon-remote {
+                margin-right: 20px;
+            }
+        }
+    }
+}

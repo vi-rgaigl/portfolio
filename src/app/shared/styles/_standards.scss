@@ -97,3 +97,9 @@ input[type="checkbox"]:hover {
 input[type="checkbox"]:checked {
     background-image: url('./../../../assets/icons/cb-click-green.png');
 }
+
+@media (max-width: 420px) {
+    input[type="text"], input[type="email"] {
+        height: 46px;
+    }
+}

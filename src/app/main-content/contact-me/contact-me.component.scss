@@ -248,3 +248,12 @@ section {
         }
     }
 }
+
+@media (max-width: 420px) {
+    .form {
+        form {
+            width: 86%;
+            gap: 10px;
+        }
+    }
+}

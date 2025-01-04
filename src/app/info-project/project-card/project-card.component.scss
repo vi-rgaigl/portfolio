@@ -106,8 +106,7 @@
     .body {
         height: 200px;
         overflow: hidden;
-        transition: height 0.3s ease;
-
+        transition: height 0.3s ease;;
         &.expanded {
           height: auto;
         }
@@ -123,6 +122,61 @@
                 &.rotate {
                     transform: rotate(180deg);
                   }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .headline {
+        height: 12vh;
+        padding: 20px;;
+    
+        .index {
+            font-size:48px;
+        }
+    
+        .title {
+            font-size: 36px;
+            margin-left: -16px;
+        }
+    }
+    .body {
+        padding-left: 16px;
+        .label {
+            font-size: 20px;
+        }
+        .value {
+            margin-left: 10px;
+            margin-bottom: 16px;
+        }
+        .info {
+            margin-right: 12px;
+            .screenshot-container{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 380px) {
+    .body {
+        padding-left: 12px;
+        .label {
+            font-size: 20px;
+        }
+        .value {
+            margin-left: 10px;
+            margin-bottom: 12px;
+        }
+        .info {
+            margin-right: 12px;
+            .screenshot-container{
+                width: 100%;
+                .screenshots {
+                    height: 24vh;
+                }
             }
         }
     }
