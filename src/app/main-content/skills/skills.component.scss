@@ -128,3 +128,12 @@ section {
         }
     }
 }
+
+@media (max-width: 320px) {
+    section {
+        .section-content {
+            padding-left: 2%;
+            padding-right: 2%;
+        }       
+    }
+}
