@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input} from '@angular/core';
-import { TranslocoModule } from '@jsverse/transloco';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-project-card',
@@ -10,6 +10,8 @@ import { TranslocoModule } from '@jsverse/transloco';
   styleUrl: './project-card.component.scss'
 })
 export class ProjectCardComponent {
+
+  constructor(public translocoService: TranslocoService) {}
 
   @Input() project: any;
 

@@ -9,11 +9,11 @@
         <div class="info">
             <div class="info-text">
                 <div class="label"><img class="circle" src="assets/icons/circle.png">{{ 'about-project' | transloco }}</div>
-                <div class="value">{{ project.description }}</div>
+                <div class="value">{{ project['description_' + (translocoService.getActiveLang() || 'en')] }}</div>
                 <div class="label"><img class="circle" src="assets/icons/circle.png">{{ 'technologies' | transloco }}</div>
                 <div class="value">{{ project.technologies }}</div>
                 <div class="label"><img class="circle" src="assets/icons/circle.png">{{ 'what-i-learned' | transloco }}</div>
-            <div class="value">{{ project.learned }}</div>
+            <div class="value">{{ project['learned_' + (translocoService.getActiveLang() || 'en')] }}</div>
             </div>
             <div class="screenshot-container">
                 <a [href]="project.link" target="_blank"><img class="screenshot" [src]="'assets/img/' + project.image" alt="screenshot join"></a>
