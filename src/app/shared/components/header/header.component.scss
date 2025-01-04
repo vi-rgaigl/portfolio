@@ -88,19 +88,19 @@ nav {
                 display: flex;
             }
             a {
-                @include font(18px, 400, #4a4a4a);
+                @include font(18px, 400, $mobile-grey);
                 text-decoration: none;
                 padding: 8px;
             }
             .language-toggle {
                 @include d-flex(row, center, center, 8px); 
                 .lang {
-                    @include font(18px, 400, #4a4a4a);
+                    @include font(18px, 400, $mobile-grey);
                     cursor: pointer;
                 }
                 .separator {
                     height: 16px;
-                    border-left: 3px solid #4a4a4a;
+                    border-left: 3px solid $mobile-grey;
                 }
             }
         }     
