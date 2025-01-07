@@ -82,17 +82,19 @@ section {
 
     .avatar {
         position: absolute;
-        height: 80%; 
+        height: 90%; 
         bottom: 2%;
+        margin-left: -210px;
         img {
             height: 100%;
+            @include img-cover();
             width: auto;
         }
     }
 
     .text-content {
         position: relative;
-        height: 24%;
+        height: 36%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -128,7 +130,7 @@ section {
 @media (max-width: 1200px) {
     .img-container {
         .avatar {
-            height: 70%;
+            height: 90%;
         }
         .text-content {
             margin-right: 46px;
@@ -161,6 +163,7 @@ section {
             position: unset;
             height: 54%;
             bottom: 0;
+            margin-left: -96px;
         }
         .text-content {
             height: auto;
