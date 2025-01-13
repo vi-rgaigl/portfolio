@@ -1,0 +1,61 @@
+@import "./../../shared/styles/_variables.scss";
+@import "./../../shared/styles/_mixin.scss";
+@import "./../../shared/styles/_standards.scss";
+
+$pad: 80px;
+
+.section {
+    @include d-flex(row, center, center, 0);
+    @include bg-main();
+
+    .content {
+        height: 100vh;
+        overflow-y: scroll;
+        color: white;
+        margin-left: var(--h-width);
+        margin-right: var(--h-width);
+        padding: $pad;
+        padding: $pad;
+
+        h1 {
+            @include font(32px, 400, $bg-green);
+        }
+
+        h2 {
+            margin-top: 32px;
+            @include font(24px, 400, $bg-green);
+        }
+
+        .arrow {
+            @include d-flex(row, flex-end, center, 0);
+        }
+    }
+}
+
+
+.app-footer {
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100vh;
+    
+    @include d-flex(column, flex-end, flex-end, 0);
+    background-color: $bg-green;
+
+    .footer-content {
+        @include d-flex(column-reverse, center, center, 180px);
+        width: var(--h-width);
+        margin-bottom: 180px;
+
+        a {
+            transform: rotate(-90deg);
+            color: black !important;
+            white-space: nowrap;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
