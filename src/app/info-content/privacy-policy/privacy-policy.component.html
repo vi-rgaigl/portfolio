@@ -1,5 +1,530 @@
 <section class="section">
-    <div class="content">
+
+    <div class="content" *ngIf="translocoService.getActiveLang() === 'en'">
+        <div class="arrow">
+            <a href="/"><img src="assets/icons/arrow-left.png" (click)="closeTab()" alt="move to home"></a>
+        </div>
+
+        <h1>Privacy Policy</h1>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li>
+                <a href="/privacy-policy#introduction-overview">Introduction and Overview</a>
+            </li>
+            <li>
+                <a href="/privacy-policy#scope">Scope</a>
+            </li>
+            <li>
+                <a href="/privacy-policy#legal-basis">Legal Basis</a>
+            </li>
+            <li>
+                <a href="/privacy-policy#contact-details-responsible">Contact Details of the Responsible Person</a>
+            </li>
+            <li>
+                <a href="/privacy-policy#storage-duration">Storage Duration</a>
+            </li>
+            <li>
+                <a href="/privacy-policy#rights-gdpr">Rights according to the General Data Protection Regulation</a>
+            </li>
+            <li>
+                <a href="/privacy-policy#data-processing-security">Data Processing Security</a>
+            </li>
+            <li>
+                <a href="/privacy-policy#communication">Communication</a>
+            </li>
+            <li>
+                <a href="/privacy-policy#cookies">Cookies</a>
+            </li>
+            <li>
+                <a href="/privacy-policy#webhosting-introduction">Webhosting Introduction</a>
+            </li>
+        </ul>
+        <h2 id="introduction-overview">Introduction and Overview</h2>
+        <p>I have written this privacy policy (version 10.01.2025-322929322) to explain to you, in accordance with the
+            requirements of the
+            <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&amp;from=EN&amp;tid=322929322#d1e2269-1-1"
+                target="_blank" rel="noopener">General Data Protection Regulation (EU) 2016/679</a> and applicable
+            national
+            laws, what personal data (short data) we as the responsible party &#8211; and the processors we commission
+            (e.g., providers) &#8211; process, will process in the future, and what lawful options you have. The terms
+            used are to be understood as gender-neutral.<br />
+            <strong>In short:</strong> I inform you comprehensively about the data I process about you.
+        </p>
+        <p>Privacy policies usually sound very technical and use legal terminology. This privacy policy, however, aims
+            to describe the most important things to you as simply and transparently as possible.
+            Where it is conducive to transparency, technical <strong>terms are explained in a reader-friendly
+                manner</strong>, links to further information are provided, and <strong>graphics</strong> are used. I
+            inform you in clear and simple
+            language that we only process personal data within the scope of our business activities if there is a
+            corresponding legal basis. This is certainly not possible if one provides the shortest, unclear, and
+            legally-technical explanations, as is often standard on the internet when it comes to data protection.
+            I hope you find the following explanations interesting and informative, and perhaps there is one or another
+            piece of information that you did not know yet.<br />
+            If you still have questions, we ask you to contact the responsible office mentioned below or in the legal
+            notice, follow the provided links, and view further information on third-party sites.
+            My contact details can also be found in the legal notice.</p>
+        <h2 id="scope">Scope</h2>
+        <p>This privacy policy applies to all personal data processed by us in the company and to all personal data
+            processed by companies commissioned by us (processors). By personal data, we mean information within the
+            meaning of Art. 4 No. 1 GDPR, such as the name, email address, and postal address of a person. The
+            processing of personal data ensures that we can offer and bill our services and products, whether online or
+            offline. The scope of this privacy policy includes:</p>
+        <ul>
+            <li>all online presences (websites, online shops) that we operate</li>
+            <li>social media presences and email communication</li>
+            <li>mobile apps for smartphones and other devices</li>
+        </ul>
+        <p>
+            <strong>In short:</strong> This privacy policy applies to all areas where personal data is processed in the
+            company through the mentioned channels. Should we enter into legal relationships with you outside of these
+            channels, we will inform you separately if necessary.
+        </p>
+        <h2 id="legal-basis">Legal Basis</h2>
+        <p>In the following privacy policy, we provide you with transparent information about the legal principles and
+            regulations, i.e., the legal bases of the General Data Protection Regulation, which allow us to process
+            personal data.<br />
+            As far as EU law is concerned, we refer to the REGULATION (EU) 2016/679 OF THE EUROPEAN PARLIAMENT AND OF
+            THE COUNCIL of 27 April 2016. You can, of course, read this EU General Data Protection Regulation online on
+            EUR-Lex, the access to EU law, at <a
+                href="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32016R0679">https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32016R0679</a>.
+        </p>
+        <p>We only process your data if at least one of the following conditions applies:</p>
+        <ol>
+            <li>
+                <strong>Consent</strong> (Article 6(1)(a) GDPR): You have given us your consent to process data for a
+                specific purpose. An example would be the storage of your entered data in a contact form.
+            </li>
+            <li>
+                <strong>Contract</strong> (Article 6(1)(b) GDPR): To fulfill a contract or pre-contractual obligations
+                with you, we process your data. For example, if we enter into a purchase contract with you, we need
+                personal information in advance.
+            </li>
+            <li>
+                <strong>Legal Obligation</strong> (Article 6(1)(c) GDPR): If we are subject to a legal obligation, we
+                process your data. For example, we are legally obliged to retain invoices for accounting purposes. These
+                usually contain personal data.
+            </li>
+            <li>
+                <strong>Legitimate Interests</strong> (Article 6(1)(f) GDPR): In the case of legitimate interests that
+                do not restrict your fundamental rights, we reserve the right to process personal data. For example, we
+                need to process certain data to operate our website securely and economically efficiently. This
+                processing is therefore a legitimate interest.
+            </li>
+        </ol>
+        <p>Other conditions such as the perception of tasks in the public interest and the exercise of official
+            authority, as well as the protection of vital interests, generally do not apply to us. If such a legal basis
+            should be relevant, it will be indicated at the appropriate place.</p>
+        <p>In addition to the EU regulation, national laws also apply:</p>
+        <ul>
+            <li>In <strong>Austria</strong>, this is the Federal Act on the Protection of Natural Persons with regard to
+                the Processing of Personal Data (<strong>Data Protection Act</strong>), abbreviated as
+                <strong>DSG</strong>.</li>
+            <li>In <strong>Germany</strong>, the <strong>Federal Data Protection Act</strong>, abbreviated as
+                <strong>BDSG</strong>, applies.</li>
+        </ul>
+        <p>If further regional or national laws apply, we will inform you in the following sections.</p>
+        <h2 id="contact-details-responsible">Contact Details of the Responsible Person</h2>
+        <p>If you have questions about data protection or the processing of personal data, you will find the contact
+            details of the responsible person according to Article 4 Paragraph 7 of the EU General Data Protection
+            Regulation (GDPR) below:<br />
+            <span>Regina Gaigl<br />
+                Riemer Gangsteig 5<br />
+                85622 Feldkirchen b. München</span>
+            <br />
+            <span>Authorized representative: Regina Gaigl</span>
+            <br />
+            Email: <a href="mailto:mail@gaigl-regina.de">mail&#64;gaigl-regina.de</a>
+            <br />
+            Phone: <a href="tel:015203247100">015203247100</a>
+        </p>
+        <h2 id="storage-duration">Storage Duration</h2>
+        <p>As a general criterion, we store personal data only as long as it is absolutely necessary to provide our
+            services and products. This means that we delete personal data as soon as the reason for data processing no
+            longer exists. In some cases, we are legally obliged to retain certain data even after the original purpose
+            has ceased to exist, for example, for accounting purposes.</p>
+        <p>If you request the deletion of your data or revoke your consent to data processing, the data will be deleted
+            as quickly as possible, provided there is no obligation to retain it.</p>
+        <p>We will inform you about the specific duration of the respective data processing further below, provided we
+            have additional information on this.</p>
+
+        <h2 id="rights-gdpr">Rights according to the General Data Protection Regulation</h2>
+        <p>According to Articles 13 and 14 of the GDPR, we inform you about the following rights you have to ensure fair
+            and transparent processing of data:</p>
+        <ul>
+            <li>According to Article 15 of the GDPR, you have the right to know whether we process data about you. If
+                this is the case, you have the right to receive a copy of the data and to learn the following
+                information:
+                <ul>
+                    <li>the purpose for which we process the data;</li>
+                    <li>the categories, i.e., the types of data that are processed;</li>
+                    <li>who receives this data and if the data is transferred to third countries, how security can be
+                        guaranteed;</li>
+                    <li>how long the data will be stored;</li>
+                    <li>the existence of the right to rectification, erasure, or restriction of processing and the right
+                        to object to processing;</li>
+                    <li>that you can lodge a complaint with a supervisory authority (links to these authorities can be
+                        found below);</li>
+                    <li>the origin of the data, if we did not collect it from you;</li>
+                    <li>whether profiling is carried out, i.e., whether data is automatically evaluated to create a
+                        personal profile of you.</li>
+                </ul>
+            </li>
+            <li>According to Article 16 of the GDPR, you have the right to rectification of the data, which means that
+                we must correct data if you find errors.</li>
+            <li>According to Article 17 of the GDPR, you have the right to erasure ("right to be forgotten"), which
+                means that you may request the deletion of your data.</li>
+            <li>According to Article 18 of the GDPR, you have the right to restrict processing, which means that we may
+                only store the data but not use it further.</li>
+            <li>According to Article 20 of the GDPR, you have the right to data portability, which means that we must
+                provide you with your data in a common format upon request.</li>
+            <li>According to Article 21 of the GDPR, you have the right to object, which, if enforced, will result in a
+                change in processing.
+                <ul>
+                    <li>If the processing of your data is based on Article 6(1)(e) (public interest, exercise of
+                        official authority) or Article 6(1)(f) (legitimate interest), you may object to the processing.
+                        We will then review as quickly as possible whether we can legally comply with this objection.
+                    </li>
+                    <li>If data is used for direct marketing, you can object to this type of data processing at any
+                        time. We may no longer use your data for direct marketing thereafter.</li>
+                    <li>If data is used for profiling, you can object to this type of data processing at any time. We
+                        may no longer use your data for profiling thereafter.</li>
+                </ul>
+            </li>
+            <li>According to Article 22 of the GDPR, you may have the right not to be subject to a decision based solely
+                on automated processing (e.g., profiling).</li>
+            <li>According to Article 77 of the GDPR, you have the right to lodge a complaint. This means that you can
+                complain to a data protection authority at any time if you believe that the processing of personal data
+                violates the GDPR.</li>
+        </ul>
+        <p>
+            <strong>In short:</strong> You have rights – do not hesitate to contact the responsible office listed above!
+        </p>
+        <p>If you believe that the processing of your data violates data protection law or your data protection rights
+            have been violated in any other way, you can lodge a complaint with the supervisory authority. In Austria,
+            this is the Data Protection Authority, whose website you can find at <a
+                href="https://www.dsb.gv.at/?tid=322929322" target="_blank" rel="noopener">https://www.dsb.gv.at/</a>.
+            In Germany, there is a data protection officer for each federal state. For more information, you can contact
+            the <a href="https://www.bfdi.bund.de/DE/Home/home_node.html" target="_blank" rel="noopener">Federal
+                Commissioner for Data Protection and Freedom of Information (BfDI)</a>. For our company, the following
+            local data protection authority is responsible:</p>
+        <h2 id="">Bavarian Data Protection Authority</h2>
+        <p>
+            <strong>State Commissioner for Data Protection:</strong> Prof. Dr. Thomas Petri<br />
+            <strong>Address:</strong> Wagmüllerstr. 18, 80538 Munich<br />
+            <strong>Phone:</strong> 089/21 26 72-0<br />
+            <strong>Email:</strong> <a href="mailto:poststelle@datenschutz-bayern.de" target="_blank"
+                rel="follow noopener">poststelle&#64;datenschutz-bayern.de</a><br />
+            <strong>Website:</strong> <a href="https://www.datenschutz-bayern.de/?tid=322929322" target="_blank"
+                rel="noopener">https://www.datenschutz-bayern.de/</a>
+        </p>
+        <h2 id="data-processing-security">Data Processing Security</h2>
+        <p>To protect personal data, we have implemented both technical and organizational measures. Where possible, we
+            encrypt or pseudonymize personal data. This makes it as difficult as possible for third parties to infer
+            personal information from our data within our capabilities.</p>
+        <p>Article 25 of the GDPR refers to "data protection through technology design and data protection-friendly
+            default settings," meaning that security is always considered and appropriate measures are taken in both
+            software (e.g., forms) and hardware (e.g., access to the server room). Below, we will go into specific
+            measures if necessary.</p>
+        <h2 id="">TLS Encryption with HTTPS</h2>
+        <p>TLS, encryption, and HTTPS sound very technical and they are. We use HTTPS (Hypertext Transfer Protocol
+            Secure) to securely transmit data over the internet.<br />
+            This means that the entire transmission of all data from your browser to our web server is secured – no one
+            can "listen in."</p>
+        <p>We have thus introduced an additional security layer and fulfill data protection through technology design
+            (<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&amp;from=EN&amp;tid=322929322"
+                target="_blank" rel="noopener">Article 25(1) GDPR</a>). By using TLS (Transport Layer Security), an
+            encryption protocol for secure data transmission on the internet, we can ensure the protection of
+            confidential data.<br />
+            You can recognize the use of this data transmission security by the small lock symbol at the top left in the
+            browser, to the left of the internet address (e.g., examplepage.de) and the use of the scheme https (instead
+            of http) as part of our internet address.<br />
+            If you want to know more about encryption, we recommend searching for "Hypertext Transfer Protocol Secure
+            wiki" on Google to find good links to further
+        <h2 id="communication">Communication</h2>
+        <table border="1" cellpadding="15">
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>Communication Summary</strong>
+                        <br />
+                        &#x1f465; Affected parties: All those who communicate with us by phone, email, or online
+                        form<br />
+                        &#x1f4d3; Processed data: e.g., phone number, name, email address, entered form data. More
+                        details can be found in the respective contact method<br />
+                        &#x1f91d; Purpose: Handling communication with customers, business partners, etc.<br />
+                        &#x1f4c5; Storage duration: Duration of the business case and legal requirements<br />
+                        &#x2696;&#xfe0f; Legal bases: Art. 6 para. 1 lit. a GDPR (consent), Art. 6 para. 1 lit. b GDPR
+                        (contract), Art. 6 para. 1 lit. f GDPR (legitimate interests)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>If you contact us and communicate by phone, email, or online form, personal data may be processed.</p>
+        <p>The data is processed for handling and processing your inquiry and the related business transaction. The data
+            is stored for as long as the business case lasts or as long as the law requires.</p>
+        <h3>Affected Persons</h3>
+        <p>All those who seek contact with us through the communication channels provided by us are affected by the
+            mentioned processes.</p>
+        <h3>Phone</h3>
+        <p>If you call us, the call data is pseudonymized stored on the respective device and by the telecommunications
+            provider used. Additionally, data such as name and phone number may be sent via email and stored for inquiry
+            response. The data is deleted as soon as the business case is concluded and legal requirements allow.</p>
+        <h3>Email</h3>
+        <p>If you communicate with us via email, data may be stored on the respective device (computer, laptop,
+            smartphone, ...) and data may be stored on the email server. The data is deleted as soon as the business
+            case is concluded and legal requirements allow.</p>
+        <h3>Online Forms</h3>
+        <p>If you communicate with us via online form, data is stored on our web server and may be forwarded to one of
+            our email addresses. The data is deleted as soon as the business case is concluded and legal requirements
+            allow.</p>
+        <h3>Legal Bases</h3>
+        <p>The processing of the data is based on the following legal bases:</p>
+        <ul>
+            <li>Art. 6 para. 1 lit. a GDPR (consent): You give us your consent to store your data and continue to use it
+                for purposes related to the business case;</li>
+            <li>Art. 6 para. 1 lit. b GDPR (contract): It is necessary to fulfill a contract with you or a processor,
+                such as the telecommunications provider, or we need to process the data for pre-contractual activities,
+                such as preparing an offer;</li>
+            <li>Art. 6 para. 1 lit. f GDPR (legitimate interests): We want to conduct customer inquiries and business
+                communication in a professional manner. Certain technical facilities, such as email programs, exchange
+                servers, and mobile operators, are necessary to efficiently conduct communication.</li>
+        </ul>
+        <h2 id="cookies">Cookies</h2>
+        <table border="1" cellpadding="15">
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>Cookies Summary</strong>
+                        <br />
+                        &#x1f465; Affected parties: Visitors of the website<br />
+                        &#x1f91d; Purpose: Depends on the respective cookie. More details can be found below or from the
+                        software manufacturer that sets the cookie.<br />
+                        &#x1f4d3; Processed data: Depends on the respective cookie. More details can be found below or
+                        from the software manufacturer that sets the cookie.<br />
+                        &#x1f4c5; Storage duration: Depends on the respective cookie, can vary from hours to years<br />
+                        &#x2696;&#xfe0f; Legal bases: Art. 6 para. 1 lit. a GDPR (consent), Art. 6 para. 1 lit. f GDPR
+                        (legitimate interests)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>What are Cookies?</h3>
+        <p>Our website uses HTTP cookies to store user-specific data.<br />
+            In the following, we explain what cookies are and why they are used so that you can better understand the
+            following privacy policy.</p>
+        <p>Whenever you browse the internet, you use a browser. Well-known browsers are, for example, Chrome, Safari,
+            Firefox, Internet Explorer, and Microsoft Edge. Most websites store small text files in your browser. These
+            files are called cookies.</p>
+        <p>One thing is undeniable: Cookies are really useful little helpers. Almost all websites use cookies. More
+            precisely, they are HTTP cookies, as there are also other cookies for other applications. HTTP cookies are
+            small files that are stored on your computer by our website. These cookie files are automatically placed in
+            the cookie folder, which is like the "brain" of your browser. A cookie consists of a name and a value. When
+            defining a cookie, one or more attributes must also be specified.</p>
+        <p>Cookies store certain user data from you, such as language or personal page settings. When you visit our site
+            again, your browser sends the "user-related" information back to our site. Thanks to the cookies, our
+            website knows who you are and offers you the settings you are used to. In some browsers, each cookie has its
+            own file, in others, such as Firefox, all cookies are stored in a single file.</p>
+        <p>The following graphic shows a possible interaction between a web browser such as Chrome and the web server.
+            The web browser requests a website and receives a cookie from the server, which the browser uses again when
+            another page is requested.</p>
+        <p>There are both first-party cookies and third-party cookies. First-party cookies are created directly by our
+            site, third-party cookies are created by partner websites (e.g., Google Analytics). Each cookie is
+            individually evaluated, as each cookie stores different data. The expiration time of a cookie also varies
+            from a few minutes to a few years. Cookies are not software programs and do not contain viruses, Trojans, or
+            other "malware." Cookies also cannot access information on your PC.</p>
+        <p>For example, cookie data can look like this:</p>
+        <p>
+            <strong>Name:</strong> _ga<br />
+            <strong>Value:</strong> GA1.2.1326744211.152322929322-9<br />
+            <strong>Purpose:</strong> Distinguishing website visitors<br />
+            <strong>Expiration date:</strong> after 2 years
+        </p>
+        <p>These minimum sizes should be supported by a browser:</p>
+        <ul>
+            <li>At least 4096 bytes per cookie</li>
+            <li>At least 50 cookies per domain</li>
+            <li>At least 3000 cookies in total</li>
+        </ul>
+        <h3>What types of cookies are there?</h3>
+        <p>The specific cookies we use depend on the services used and will be clarified in the following sections of
+            the privacy policy. At this point, we would like to briefly explain the different types of HTTP cookies.</p>
+        <p>There are 4 types of cookies:</p>
+        <p>
+            <strong>Essential Cookies<br />
+            </strong>These cookies are necessary to ensure basic functions of the website. For example, these cookies
+            are needed when a user puts a product in the shopping cart, continues browsing on other pages, and later
+            goes to the checkout. Through these cookies, the shopping cart is not deleted even if the user closes their
+            browser window.
+        </p>
+        <p>
+            <strong>Functional Cookies<br />
+            </strong>These cookies collect information about user behavior and whether the user receives any error
+            messages. Additionally, these cookies measure the loading time and behavior of the website in different
+            browsers.
+        </p>
+        <p>
+            <strong>Targeted Cookies<br />
+            </strong>These cookies ensure a better user experience. For example, entered locations, font sizes, or form
+            data are saved.
+        </p>
+        <p>
+            <strong>Advertising Cookies<br />
+            </strong>These cookies are also called targeting cookies. They are used to deliver personalized advertising
+            to the user. This can be very useful, but also very annoying.
+        </p>
+        <p>Usually, you are asked when you first visit a website which types of cookies you want to allow. And of
+            course, this decision is also stored in a cookie.</p>
+        <p>If you want to learn more about cookies and do not shy away from technical documentation, we recommend <a
+                href="https://datatracker.ietf.org/doc/html/rfc6265">https://datatracker.ietf.org/doc/html/rfc6265</a>,
+            the Request for Comments by the Internet Engineering Task Force (IETF) named "HTTP State Management
+            Mechanism."</p>
+        <h3>Purpose of processing through cookies</h3>
+        <p>The purpose ultimately depends on the respective cookie. More details can be found below or from the software
+            manufacturer that sets the cookie.</p>
+        <h3>What data is processed?</h3>
+        <p>Cookies are small helpers for many different tasks. Unfortunately, it is not possible to generalize which
+            data is stored in cookies, but we will inform you about the processed or stored data within the framework of
+            this privacy policy.</p>
+        <h3>Storage duration of cookies</h3>
+        <p>The storage duration depends on the respective cookie and will be specified further below. Some cookies are
+            deleted after less than an hour, while others can remain stored on a computer for several years.</p>
+        <p>You also have an influence on the storage duration. You can manually delete all cookies at any time via your
+            browser (see also below "Right to object"). Furthermore, cookies based on consent will be deleted at the
+            latest after you withdraw your consent, whereby the legality of the storage remains unaffected until then.
+        </p>
+        <h3>Right to object – how can I delete cookies?</h3>
+        <p>You decide for yourself how and whether you want to use cookies. Regardless of which service or website the
+            cookies come from, you always have the option to delete, deactivate, or only partially allow cookies. For
+            example, you can block third-party cookies but allow all other cookies.</p>
+        <p>If you want to find out which cookies are stored in your browser, if you want to change or delete cookie
+            settings, you can find this in your browser settings:</p>
+        <p>
+            <a href="https://support.google.com/chrome/answer/95647?tid=322929322" target="_blank"
+                rel="noopener noreferrer">Chrome: Delete, enable, and manage cookies in Chrome</a>
+        </p>
+        <p>
+            <a href="https://support.apple.com/guide/safari/sfri11471/mac?tid=322929322" target="_blank"
+                rel="noopener noreferrer">Safari: Manage cookies and website data with Safari</a>
+        </p>
+        <p>
+            <a href="https://support.mozilla.org/kb/cookies-and-site-data-firefox" target="_blank"
+                rel="noopener noreferrer">Firefox: Delete cookies to remove the data that websites have placed on your
+                computer</a>
+        </p>
+        <p>
+            <a href="https://support.microsoft.com/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d?tid=322929322"
+                target="_blank" rel="noopener noreferrer">Internet Explorer: Delete and manage cookies</a>
+        </p>
+        <p>
+            <a href="https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09?tid=322929322"
+                target="_blank" rel="noopener noreferrer">Microsoft Edge: Delete and manage cookies</a>
+        </p>
+        <p>If you generally do not want to have cookies, you can set your browser to always inform you when a cookie is
+            to be set. This way, you can decide for each individual cookie whether you want to allow it or not. The
+            procedure varies depending on the browser. It is best to search for the instructions on Google with the
+            search term "delete cookies Chrome" or "disable cookies Chrome" in the case of a Chrome browser.</p>
+        <h3>Legal basis</h3>
+        <p>Since 2009, there have been the so-called "cookie guidelines." These state that storing cookies requires your
+            consent (Article 6 para. 1 lit. a GDPR). However, there are very different reactions to these guidelines
+            within the EU countries. In Austria, this directive was implemented in Section 165 para. 3 of the
+            Telecommunications Act (2021). In Germany, the cookie guidelines were not implemented as national law.
+            Instead, this directive was largely implemented in Section 15 para. 3 of the Telemedia Act (TMG), which has
+            been replaced by the Digital Services Act (DSA) since May 2024.</p>
+        <p>For absolutely necessary cookies, even if no consent is given, there are legitimate interests (Article 6
+            para. 1 lit. f GDPR), which are mostly of an economic nature. We want to provide visitors to the website
+            with a pleasant user experience, and certain cookies are often absolutely necessary for this.</p>
+        <p>If non-essential cookies are used, this only happens with your consent. The legal basis is then Art. 6 para.
+            1 lit. a GDPR.</p>
+        <p>In the following sections, you will be informed in more detail about the use of cookies, provided that the
+            software used employs cookies.</p>
+        <h2 id="webhosting-introduction">Webhosting Introduction</h2>
+        <table border="1" cellpadding="15">
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>Webhosting Summary</strong>
+                        <br />
+                        &#x1f465; Affected parties: Visitors of the website<br />
+                        &#x1f91d; Purpose: Professional hosting of the website and securing the operation<br />
+                        &#x1f4d3; Processed data: IP address, time of website visit, browser used, and other data. More
+                        details can be found below or from the respective web hosting provider.<br />
+                        &#x1f4c5; Storage duration: Depending on the respective provider, but usually 2 weeks<br />
+                        &#x2696;&#xfe0f; Legal bases: Art. 6 para. 1 lit. f GDPR (legitimate interests)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>What is Webhosting?</h3>
+        <p>When you visit websites today, certain information – including personal data – is automatically created and
+            stored, including on this website. This data should be processed as sparingly and with justification as
+            possible. By website, we mean the entirety of all web pages on a domain, i.e., everything from the homepage
+            to the very last subpage (like this one). By domain, we mean, for example, example.com or sampleexample.com.
+        </p>
+        <p>When you want to view a website on a computer, tablet, or smartphone, you use a program called a web browser.
+            You probably know some web browsers by name: Google Chrome, Microsoft Edge, Mozilla Firefox, and Apple
+            Safari. We simply call them browsers or web browsers.</p>
+        <p>To display the website, the browser must connect to another computer where the website's code is stored: the
+            web server. Operating a web server is a complicated and costly task, which is why it is usually handled by
+            professional providers, the hosts. They offer web hosting and ensure reliable and error-free storage of
+            website data. A lot of technical terms, but please stay with us, it gets better!</p>
+        <p>When the browser on your computer (desktop, laptop, tablet, or smartphone) connects and during data
+            transmission to and from the web server, personal data may be processed. On the one hand, your computer
+            stores data, and on the other hand, the web server must store data for a while to ensure proper operation.
+        </p>
+        <p>A picture is worth a thousand words, so the following graphic illustrates the interaction between the
+            browser, the internet, and the hosting provider.</p>
+        <h3>Why do we process personal data?</h3>
+        <p>The purposes of data processing are:</p>
+        <ol>
+            <li>Professional hosting of the website and securing the operation</li>
+            <li>Maintaining operational and IT security</li>
+            <li>Anonymous evaluation of access behavior to improve our offer and, if necessary, for law enforcement or
+                claims enforcement</li>
+        </ol>
+        <h3>What data is processed?</h3>
+        <p>Even while you are visiting our website right now, our web server, which is the computer on which this
+            website is stored, usually automatically saves data such as</p>
+        <ul>
+            <li>the complete internet address (URL) of the accessed website</li>
+            <li>browser and browser version (e.g., Chrome 87)</li>
+            <li>the operating system used (e.g., Windows 10)</li>
+            <li>the address (URL) of the previously visited page (referrer URL) (e.g., <a
+                    href="https://www.example-source-site.com/where-i-came-from/" target="_blank"
+                    rel="follow noopener">https://www.example-source-site.com/where-i-came-from/</a>)</li>
+            <li>the hostname and IP address of the device from which access is made (e.g., COMPUTERNAME and
+                194.23.43.121)</li>
+            <li>date and time</li>
+            <li>in files, the so-called web server log files</li>
+        </ul>
+        <h3>How long is data stored?</h3>
+        <p>As a rule, the above-mentioned data is stored for two weeks and then automatically deleted. We do not pass on
+            this data, but we cannot exclude that this data may be viewed by authorities in the event of unlawful
+            behavior.</p>
+        <p>
+            <strong>In short:</strong> Your visit is logged by our provider (the company that runs our website on
+            special computers (servers)), but we do not pass on your data without consent!
+        </p>
+        <h3>Legal basis</h3>
+        <p>The legality of processing personal data in the context of web hosting results from Art. 6 para. 1 lit. f
+            GDPR (legitimate interests), as the use of professional hosting by a provider is necessary to present the
+            company securely and user-friendly on the internet and to be able to pursue attacks and claims if necessary.
+        </p>
+        <p>There is usually a contract for order processing according to Art. 28 f. GDPR between us and the hosting
+            provider, which ensures compliance with data protection and guarantees data security.</p>
+        <p>All texts are protected by copyright.</p>
+        <br>
+        <br>
+        <br>
+        <p style="margin-top:15px">Source: <a href="https://www.adsimple.de/datenschutz-generator/"
+                title="Privacy Policy Generator Germany">Privacy Policy</a> created with the Privacy Policy Generator
+            for Germany by AdSimple. Also, check out our <a href="https://www.adsimple.de/muster-datenschutzerklaerung/"
+                title="Sample Privacy Policy">Sample Privacy Policy</a>.</p>
+
+
+
+    </div>
+
+    <div class="content" *ngIf="translocoService.getActiveLang() === 'de'">
         <div class="arrow">
             <a href="/"><img src="assets/icons/arrow-left.png" (click)="closeTab()" alt="move to home"></a>
         </div>
@@ -40,35 +565,42 @@
         </ul>
         <h2 id="einleitung-ueberblick">Einleitung und Überblick</h2>
         <p>Ich habe diese Datenschutzerklärung (Fassung 10.01.2025-322929322) verfasst, um Ihnen gemäß der Vorgaben der
-            <a
-                href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&amp;from=DE&amp;tid=322929322#d1e2269-1-1"
+            <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&amp;from=DE&amp;tid=322929322#d1e2269-1-1"
                 target="_blank" rel="noopener">Datenschutz-Grundverordnung (EU) 2016/679</a> und anwendbaren nationalen
-            Gesetzen zu erklären, welche personenbezogenen Daten (kurz Daten) wir als Verantwortliche &#8211; und die von uns
+            Gesetzen zu erklären, welche personenbezogenen Daten (kurz Daten) wir als Verantwortliche &#8211; und die
+            von uns
             beauftragten Auftragsverarbeiter (z. B. Provider) &#8211; verarbeiten, zukünftig verarbeiten werden und
-            welche rechtmäßigen Möglichkeiten Sie haben. Die verwendeten Begriffe sind geschlechtsneutral zu verstehen.<br />
+            welche rechtmäßigen Möglichkeiten Sie haben. Die verwendeten Begriffe sind geschlechtsneutral zu
+            verstehen.<br />
             <strong>Kurz gesagt:</strong> Ich informieren Sie umfassend über Daten, die ich über Sie verarbeite.
         </p>
         <p>Datenschutzerklärungen klingen für gewöhnlich sehr technisch und verwenden juristische Fachbegriffe. Diese
             Datenschutzerklärung soll Ihnen hingegen die wichtigsten Dinge so einfach und transparent wie möglich
             beschreiben.
-            Soweit es der Transparenz förderlich ist, werden technische <strong>Begriffe leserfreundlich erklärt</strong>, 
-            Links zu weiterführenden Informationen geboten und <strong>Grafiken</strong> zum Einsatz gebracht. Ich informiere damit in 
+            Soweit es der Transparenz förderlich ist, werden technische <strong>Begriffe leserfreundlich
+                erklärt</strong>,
+            Links zu weiterführenden Informationen geboten und <strong>Grafiken</strong> zum Einsatz gebracht. Ich
+            informiere damit in
             klarer und einfacher
-            Sprache, dass wir im Rahmen unserer Geschäftstätigkeiten nur dann personenbezogene Daten verarbeiten, wenn eine
+            Sprache, dass wir im Rahmen unserer Geschäftstätigkeiten nur dann personenbezogene Daten verarbeiten, wenn
+            eine
             entsprechende gesetzliche Grundlage gegeben ist. Das ist sicher nicht möglich, wenn man möglichst knappe,
             unklare und juristisch-technische Erklärungen abgibt, so wie sie im Internet oft Standard sind, wenn es um
             Datenschutz geht.
             Ich hoffe, Sie finden die folgenden Erläuterungen interessant und informativ und vielleicht ist die eine
             oder andere Information dabei, die Sie noch nicht kannten.<br />
             Wenn trotzdem Fragen bleiben, möchten wir Sie bitten, sich an die unten bzw. im Impressum genannte
-            verantwortliche Stelle zu wenden, den vorhandenen Links zu folgen und sich weitere Informationen auf Drittseiten anzusehen.
+            verantwortliche Stelle zu wenden, den vorhandenen Links zu folgen und sich weitere Informationen auf
+            Drittseiten anzusehen.
             Meine Kontaktdaten finden Sie selbstverständlich auch im Impressum.</p>
         <h2 id="anwendungsbereich">Anwendungsbereich</h2>
         <p>Diese Datenschutzerklärung gilt für alle von uns im Unternehmen verarbeiteten personenbezogenen Daten und für
             alle personenbezogenen Daten, die von uns beauftragte Firmen (Auftragsverarbeiter) verarbeiten. Mit
-            personenbezogenen Daten meinen wir Informationen im Sinne des Art. 4 Nr. 1 DSGVO wie zum Beispiel Name, E-Mail-Adresse und
+            personenbezogenen Daten meinen wir Informationen im Sinne des Art. 4 Nr. 1 DSGVO wie zum Beispiel Name,
+            E-Mail-Adresse und
             postalische Anschrift einer Person. Die Verarbeitung personenbezogener Daten sorgt dafür, dass wir unsere
-            Dienstleistungen und Produkte anbieten und abrechnen können, sei es online oder offline. Der Anwendungsbereich dieser
+            Dienstleistungen und Produkte anbieten und abrechnen können, sei es online oder offline. Der
+            Anwendungsbereich dieser
             Datenschutzerklärung umfasst:</p>
         <ul>
             <li>alle Onlineauftritte (Websites, Onlineshops), die wir betreiben</li>
@@ -77,16 +609,19 @@
         </ul>
         <p>
             <strong>Kurz gesagt:</strong> Die Datenschutzerklärung gilt für alle Bereiche, in
-            denen personenbezogene Daten im Unternehmen über die genannten Kanäle strukturiert verarbeitet werden. Sollten wir
+            denen personenbezogene Daten im Unternehmen über die genannten Kanäle strukturiert verarbeitet werden.
+            Sollten wir
             außerhalb dieser Kanäle mit Ihnen in Rechtsbeziehungen eintreten, werden wir Sie gegebenenfalls gesondert
             informieren.
         </p>
         <h2 id="rechtsgrundlagen">Rechtsgrundlagen</h2>
         <p>In der folgenden Datenschutzerklärung geben wir Ihnen transparente Informationen zu den rechtlichen
-            Grundsätzen und Vorschriften, also den Rechtsgrundlagen der Datenschutz-Grundverordnung, die uns ermöglichen,
+            Grundsätzen und Vorschriften, also den Rechtsgrundlagen der Datenschutz-Grundverordnung, die uns
+            ermöglichen,
             personenbezogene Daten zu verarbeiten.<br />
             Was das EU-Recht betrifft, beziehen wir uns auf die VERORDNUNG (EU) 2016/679 DES EUROPÄISCHEN PARLAMENTS UND
-            DES RATES vom 27. April 2016. Diese Datenschutz-Grundverordnung der EU können Sie selbstverständlich online auf
+            DES RATES vom 27. April 2016. Diese Datenschutz-Grundverordnung der EU können Sie selbstverständlich online
+            auf
             EUR-Lex, dem Zugang zum EU-Recht, unter <a
                 href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679">https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679</a>
             nachlesen.</p>
@@ -99,20 +634,24 @@
             </li>
             <li>
                 <strong>Vertrag</strong> (Artikel 6 Absatz 1 lit. b DSGVO): Um einen Vertrag
-                oder vorvertragliche Verpflichtungen mit Ihnen zu erfüllen, verarbeiten wir Ihre Daten. Wenn wir zum Beispiel
+                oder vorvertragliche Verpflichtungen mit Ihnen zu erfüllen, verarbeiten wir Ihre Daten. Wenn wir zum
+                Beispiel
                 einen Kaufvertrag mit Ihnen abschließen, benötigen wir vorab personenbezogene Informationen.
             </li>
             <li>
-                <strong  >Rechtliche Verpflichtung</strong> (Artikel 6 Absatz 1 lit. c DSGVO):
+                <strong>Rechtliche Verpflichtung</strong> (Artikel 6 Absatz 1 lit. c DSGVO):
                 Wenn wir einer rechtlichen Verpflichtung unterliegen, verarbeiten wir Ihre Daten. Zum Beispiel sind wir
-                gesetzlich verpflichtet Rechnungen für die Buchhaltung aufzuheben. Diese enthalten in der Regel personenbezogene
+                gesetzlich verpflichtet Rechnungen für die Buchhaltung aufzuheben. Diese enthalten in der Regel
+                personenbezogene
                 Daten.
             </li>
             <li>
-                <strong  >Berechtigte Interessen</strong> (Artikel 6 Absatz 1 lit. f DSGVO): Im
-                Falle berechtigter Interessen, die Ihre Grundrechte nicht einschränken, behalten wir uns die Verarbeitung
+                <strong>Berechtigte Interessen</strong> (Artikel 6 Absatz 1 lit. f DSGVO): Im
+                Falle berechtigter Interessen, die Ihre Grundrechte nicht einschränken, behalten wir uns die
+                Verarbeitung
                 personenbezogener Daten vor. Wir müssen zum Beispiel gewisse Daten verarbeiten, um unsere Website sicher
-                und wirtschaftlich effizient betreiben zu können. Diese Verarbeitung ist somit ein berechtigtes Interesse.
+                und wirtschaftlich effizient betreiben zu können. Diese Verarbeitung ist somit ein berechtigtes
+                Interesse.
             </li>
         </ol>
         <p>Weitere Bedingungen wie die Wahrnehmung von Aufnahmen im öffentlichen Interesse und Ausübung öffentlicher
@@ -122,10 +661,12 @@
         <ul>
             <li>In <strong>Österreich</strong> ist dies das
                 Bundesgesetz
-                zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten (<strong>Datenschutzgesetz</strong>), 
+                zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten
+                (<strong>Datenschutzgesetz</strong>),
                 kurz <strong>DSG</strong>.</li>
             <li>In <strong>Deutschland</strong> gilt das <strong>Bundesdatenschutzgesetz</strong>, kurz
-                <strong>BDSG</strong>.</li>
+                <strong>BDSG</strong>.
+            </li>
         </ul>
         <p>Sofern weitere regionale oder nationale Gesetze zur Anwendung kommen, informieren wir Sie in den folgenden
             Abschnitten darüber.</p>
@@ -148,8 +689,10 @@
         <p>Dass wir personenbezogene Daten nur so lange speichern, wie es für die Bereitstellung unserer
             Dienstleistungen und
             Produkte unbedingt notwendig ist, gilt als generelles Kriterium bei uns. Das bedeutet, dass wir
-            personenbezogene Daten löschen, sobald der Grund für die Datenverarbeitung nicht mehr vorhanden ist. In einigen Fällen sind
-            wir gesetzlich dazu verpflichtet, bestimmte Daten auch nach Wegfall des ursprüngliches Zwecks zu speichern, zum
+            personenbezogene Daten löschen, sobald der Grund für die Datenverarbeitung nicht mehr vorhanden ist. In
+            einigen Fällen sind
+            wir gesetzlich dazu verpflichtet, bestimmte Daten auch nach Wegfall des ursprüngliches Zwecks zu speichern,
+            zum
             Beispiel zu Zwecken der Buchführung.</p>
         <p>Sollten Sie die Löschung Ihrer Daten wünschen oder die Einwilligung zur Datenverarbeitung widerrufen, werden
             die Daten so rasch wie möglich und soweit keine Pflicht zur Speicherung besteht, gelöscht.</p>
@@ -168,41 +711,41 @@
                     <li>zu welchem Zweck wir die Verarbeitung durchführen;</li>
                     <li>die Kategorien, also die Arten von Daten, die verarbeitet werden;
                     </li>
-                    <li  >wer diese Daten erhält und wenn die Daten an Drittländer übermittelt
+                    <li>wer diese Daten erhält und wenn die Daten an Drittländer übermittelt
                         werden,
                         wie die Sicherheit garantiert werden kann;</li>
-                    <li  >wie lange die Daten gespeichert werden;</li>
-                    <li  >das Bestehen des Rechts auf Berichtigung, Löschung oder Einschränkung
+                    <li>wie lange die Daten gespeichert werden;</li>
+                    <li>das Bestehen des Rechts auf Berichtigung, Löschung oder Einschränkung
                         der
                         Verarbeitung und dem Widerspruchsrecht gegen die Verarbeitung;</li>
-                    <li  >dass Sie sich bei einer Aufsichtsbehörde beschweren können (Links zu
+                    <li>dass Sie sich bei einer Aufsichtsbehörde beschweren können (Links zu
                         diesen
                         Behörden finden Sie weiter unten);</li>
-                    <li  >die Herkunft der Daten, wenn wir sie nicht bei Ihnen erhoben haben;
+                    <li>die Herkunft der Daten, wenn wir sie nicht bei Ihnen erhoben haben;
                     </li>
-                    <li  >ob Profiling durchgeführt wird, ob also Daten automatisch ausgewertet
+                    <li>ob Profiling durchgeführt wird, ob also Daten automatisch ausgewertet
                         werden,
                         um zu einem persönlichen Profil von Ihnen zu gelangen.</li>
                 </ul>
             </li>
-            <li  >Sie haben laut Artikel 16 DSGVO ein Recht auf Berichtigung der Daten, was
+            <li>Sie haben laut Artikel 16 DSGVO ein Recht auf Berichtigung der Daten, was
                 bedeutet,
                 dass wir Daten richtig stellen müssen, falls Sie Fehler finden.</li>
-            <li  >Sie haben laut Artikel 17 DSGVO das Recht auf Löschung („Recht auf
+            <li>Sie haben laut Artikel 17 DSGVO das Recht auf Löschung („Recht auf
                 Vergessenwerden“),
                 was konkret bedeutet, dass Sie die Löschung Ihrer Daten verlangen dürfen.</li>
-            <li  >Sie haben laut Artikel 18 DSGVO das Recht auf Einschränkung der Verarbeitung,
+            <li>Sie haben laut Artikel 18 DSGVO das Recht auf Einschränkung der Verarbeitung,
                 was
                 bedeutet, dass wir die Daten nur mehr speichern dürfen aber nicht weiter verwenden.</li>
-            <li  >Sie haben laut Artikel 20 DSGVO das Recht auf Datenübertragbarkeit, was
+            <li>Sie haben laut Artikel 20 DSGVO das Recht auf Datenübertragbarkeit, was
                 bedeutet,
                 dass wir Ihnen auf Anfrage Ihre Daten in einem gängigen Format zur Verfügung stellen.</li>
-            <li  >Sie haben laut Artikel 21 DSGVO ein Widerspruchsrecht, welches nach
+            <li>Sie haben laut Artikel 21 DSGVO ein Widerspruchsrecht, welches nach
                 Durchsetzung
                 eine
                 Änderung der Verarbeitung mit sich bringt.
-                <ul  >
-                    <li  >Wenn die Verarbeitung Ihrer Daten auf Artikel 6 Abs. 1 lit. e
+                <ul>
+                    <li>Wenn die Verarbeitung Ihrer Daten auf Artikel 6 Abs. 1 lit. e
                         (öffentliches
                         Interesse, Ausübung öffentlicher Gewalt) oder Artikel 6 Abs. 1 lit. f (berechtigtes Interesse)
                         basiert,
@@ -210,11 +753,11 @@
                         ob
                         wir
                         diesem Widerspruch rechtlich nachkommen können.</li>
-                    <li  >Werden Daten verwendet, um Direktwerbung zu betreiben, können Sie
+                    <li>Werden Daten verwendet, um Direktwerbung zu betreiben, können Sie
                         jederzeit
                         gegen diese Art der Datenverarbeitung widersprechen. Wir dürfen Ihre Daten danach nicht mehr für
                         Direktmarketing verwenden.</li>
-                    <li  >Werden Daten verwendet, um Profiling zu betreiben, können Sie
+                    <li>Werden Daten verwendet, um Profiling zu betreiben, können Sie
                         jederzeit
                         gegen
                         diese Art der Datenverarbeitung widersprechen. Wir dürfen Ihre Daten danach nicht mehr für
@@ -222,12 +765,12 @@
                         verwenden.</li>
                 </ul>
             </li>
-            <li  >Sie haben laut Artikel 22 DSGVO unter Umständen das Recht, nicht einer
+            <li>Sie haben laut Artikel 22 DSGVO unter Umständen das Recht, nicht einer
                 ausschließlich
                 auf einer automatisierten Verarbeitung (zum Beispiel Profiling) beruhenden Entscheidung unterworfen zu
                 werden.
             </li>
-            <li  >Sie haben laut Artikel 77 DSGVO das Recht auf Beschwerde. Das heißt, Sie
+            <li>Sie haben laut Artikel 77 DSGVO das Recht auf Beschwerde. Das heißt, Sie
                 können
                 sich
                 jederzeit bei der Datenschutzbehörde beschweren, wenn Sie der Meinung sind, dass die Datenverarbeitung
@@ -235,36 +778,35 @@
                 personenbezogenen Daten gegen die DSGVO verstößt.</li>
         </ul>
         <p>
-            <strong  >Kurz gesagt:</strong> Sie haben Rechte &#8211; zögern Sie nicht, die oben
+            <strong>Kurz gesagt:</strong> Sie haben Rechte &#8211; zögern Sie nicht, die oben
             gelistete verantwortliche Stelle bei uns zu kontaktieren!
         </p>
         <p>Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre
             datenschutzrechtlichen Ansprüche in sonst einer Weise verletzt worden sind, können Sie sich bei der
             Aufsichtsbehörde
             beschweren. Diese ist für Österreich die Datenschutzbehörde, deren Website Sie unter <a
-                  href="https://www.dsb.gv.at/?tid=322929322" target="_blank"
-                rel="noopener">https://www.dsb.gv.at/</a> finden. In
+                href="https://www.dsb.gv.at/?tid=322929322" target="_blank" rel="noopener">https://www.dsb.gv.at/</a>
+            finden. In
             Deutschland gibt es für jedes Bundesland einen Datenschutzbeauftragten. Für nähere Informationen können Sie
             sich
             an
-            die <a   href="https://www.bfdi.bund.de/DE/Home/home_node.html" target="_blank"
+            die <a href="https://www.bfdi.bund.de/DE/Home/home_node.html" target="_blank"
                 rel="noopener">Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)</a> wenden. Für
             unser
             Unternehmen ist die folgende lokale Datenschutzbehörde zuständig:</p>
-        <h2 id="bayern-datenschutzbehoerde"  >Bayern Datenschutzbehörde</h2>
+        <h2 id="bayern-datenschutzbehoerde">Bayern Datenschutzbehörde</h2>
         <p>
-            <strong  >Landesbeauftragter für Datenschutz:</strong> Prof. Dr. Thomas Petri<br />
-            <strong  >Adresse:</strong> Wagmüllerstr. 18, 80538 München<br />
-            <strong  >Telefonnr.:</strong> 089/21 26 72-0<br />
-            <strong  >E-Mail-Adresse:</strong> <a  
-                href="mailto:poststelle@datenschutz-bayern.de" target="_blank"
+            <strong>Landesbeauftragter für Datenschutz:</strong> Prof. Dr. Thomas Petri<br />
+            <strong>Adresse:</strong> Wagmüllerstr. 18, 80538 München<br />
+            <strong>Telefonnr.:</strong> 089/21 26 72-0<br />
+            <strong>E-Mail-Adresse:</strong> <a href="mailto:poststelle@datenschutz-bayern.de" target="_blank"
                 rel="follow noopener">poststelle&#64;datenschutz-bayern.de</a>
             <br />
-            <strong  >Website: </strong>
-            <a   href="https://www.datenschutz-bayern.de/?tid=322929322" target="_blank"
+            <strong>Website: </strong>
+            <a href="https://www.datenschutz-bayern.de/?tid=322929322" target="_blank"
                 rel="noopener">https://www.datenschutz-bayern.de/</a>
         </p>
-        <h2 id="sicherheit-datenverarbeitung"  >Sicherheit der Datenverarbeitung</h2>
+        <h2 id="sicherheit-datenverarbeitung">Sicherheit der Datenverarbeitung</h2>
         <p>Um personenbezogene Daten zu schützen, haben wir sowohl technische als auch organisatorische Maßnahmen
             umgesetzt.
             Wo
@@ -280,7 +822,7 @@
             Zugang zum Serverraum) immer an Sicherheit denkt und entsprechende Maßnahmen setzt. Im Folgenden gehen wir,
             falls
             erforderlich, noch auf konkrete Maßnahmen ein.</p>
-        <h2 id="tls-verschluesselung-https"  >TLS-Verschlüsselung mit https</h2>
+        <h2 id="tls-verschluesselung-https">TLS-Verschlüsselung mit https</h2>
         <p>TLS, Verschlüsselung und https klingen sehr technisch und sind es auch. Wir verwenden HTTPS (das Hypertext
             Transfer
             Protocol Secure steht für „sicheres Hypertext-Übertragungsprotokoll“), um Daten abhörsicher im Internet zu
@@ -290,8 +832,7 @@
             &#8211; niemand kann &#8220;mithören&#8221;.</p>
         <p>Damit haben wir eine zusätzliche Sicherheitsschicht eingeführt und erfüllen den Datenschutz durch
             Technikgestaltung
-            (<a  
-                href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&amp;from=DE&amp;tid=322929322"
+            (<a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&amp;from=DE&amp;tid=322929322"
                 target="_blank" rel="noopener">Artikel 25 Absatz 1 DSGVO</a>). Durch den Einsatz von TLS (Transport
             Layer
             Security), einem Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet, können wir den Schutz
@@ -301,12 +842,12 @@
             (anstatt http) als Teil unserer Internetadresse.<br />
             Wenn Sie mehr zum Thema Verschlüsselung wissen möchten, empfehlen wir die Google Suche nach &#8220;Hypertext
             Transfer Protocol Secure wiki&#8221; um gute Links zu weiterführenden Informationen zu erhalten.</p>
-        <h2 id="kommunikation"  >Kommunikation</h2>
+        <h2 id="kommunikation">Kommunikation</h2>
         <table border="1" cellpadding="15">
             <tbody>
                 <tr>
                     <td>
-                        <strong  >Kommunikation Zusammenfassung</strong>
+                        <strong>Kommunikation Zusammenfassung</strong>
                         <br />
                         &#x1f465; Betroffene: Alle, die mit uns per Telefon, E-Mail oder Online-Formular
                         kommunizieren<br />
@@ -329,42 +870,42 @@
         <p>Die Daten werden für die Abwicklung und Bearbeitung Ihrer Frage und des damit zusammenhängenden
             Geschäftsvorgangs
             verarbeitet. Die Daten während eben solange gespeichert bzw. solange es das Gesetz vorschreibt.</p>
-        <h3  >Betroffene Personen</h3>
+        <h3>Betroffene Personen</h3>
         <p>Von den genannten Vorgängen sind alle betroffen, die über die von uns bereit gestellten Kommunikationswege
             den
             Kontakt zu uns suchen.</p>
-        <h3  >Telefon</h3>
+        <h3>Telefon</h3>
         <p>Wenn Sie uns anrufen, werden die Anrufdaten auf dem jeweiligen Endgerät und beim eingesetzten
             Telekommunikationsanbieter pseudonymisiert gespeichert. Außerdem können Daten wie Name und Telefonnummer im
             Anschluss per E-Mail versendet und zur Anfragebeantwortung gespeichert werden. Die Daten werden gelöscht,
             sobald
             der
             Geschäftsfall beendet wurde und es gesetzliche Vorgaben erlauben.</p>
-        <h3  >E-Mail</h3>
+        <h3>E-Mail</h3>
         <p>Wenn Sie mit uns per E-Mail kommunizieren, werden Daten gegebenenfalls auf dem jeweiligen Endgerät (Computer,
             Laptop,
             Smartphone,&#8230;) gespeichert und es kommt zur Speicherung von Daten auf dem E-Mail-Server. Die Daten
             werden
             gelöscht, sobald der Geschäftsfall beendet wurde und es gesetzliche Vorgaben erlauben.</p>
-        <h3  >Online Formulare</h3>
+        <h3>Online Formulare</h3>
         <p>Wenn Sie mit uns mittels Online-Formular kommunizieren, werden Daten auf unserem Webserver gespeichert und
             gegebenenfalls an eine E-Mail-Adresse von uns weitergeleitet. Die Daten werden gelöscht, sobald der
             Geschäftsfall
             beendet wurde und es gesetzliche Vorgaben erlauben.</p>
-        <h3  >Rechtsgrundlagen</h3>
+        <h3>Rechtsgrundlagen</h3>
         <p>Die Verarbeitung der Daten basiert auf den folgenden Rechtsgrundlagen:</p>
-        <ul  >
-            <li  >Art. 6 Abs. 1 lit. a DSGVO (Einwilligung): Sie geben uns die Einwilligung
+        <ul>
+            <li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung): Sie geben uns die Einwilligung
                 Ihre
                 Daten
                 zu speichern und weiter für den Geschäftsfall betreffende Zwecke zu verwenden;</li>
-            <li  >Art. 6 Abs. 1 lit. b DSGVO (Vertrag): Es besteht die Notwendigkeit für die
+            <li>Art. 6 Abs. 1 lit. b DSGVO (Vertrag): Es besteht die Notwendigkeit für die
                 Erfüllung
                 eines Vertrags mit Ihnen oder einem Auftragsverarbeiter wie z. B. dem Telefonanbieter oder wir müssen
                 die
                 Daten
                 für vorvertragliche Tätigkeiten, wie z. B. die Vorbereitung eines Angebots, verarbeiten;</li>
-            <li  >Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen): Wir wollen
+            <li>Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen): Wir wollen
                 Kundenanfragen
                 und
                 geschäftliche Kommunikation in einem professionellen Rahmen betreiben. Dazu sind gewisse technische
@@ -372,12 +913,12 @@
                 Kommunikation
                 effizient betreiben zu können.</li>
         </ul>
-        <h2 id="cookies"  >Cookies</h2>
+        <h2 id="cookies">Cookies</h2>
         <table border="1" cellpadding="15">
             <tbody>
                 <tr>
                     <td>
-                        <strong  >Cookies Zusammenfassung</strong>
+                        <strong>Cookies Zusammenfassung</strong>
                         <br />
                         &#x1f465; Betroffene: Besucher der Website<br />
                         &#x1f91d; Zweck: abhängig vom jeweiligen Cookie. Mehr Details dazu finden Sie weiter unten bzw.
@@ -396,7 +937,7 @@
                 </tr>
             </tbody>
         </table>
-        <h3  >Was sind Cookies?</h3>
+        <h3>Was sind Cookies?</h3>
         <p>Unsere Website verwendet HTTP-Cookies, um nutzerspezifische Daten zu speichern.<br />
             Im Folgenden erklären wir, was Cookies sind und warum Sie genutzt werden, damit Sie die folgende
             Datenschutzerklärung besser verstehen.</p>
@@ -443,18 +984,18 @@
             oder andere „Schädlinge“. Cookies können auch nicht auf Informationen Ihres PCs zugreifen.</p>
         <p>So können zum Beispiel Cookie-Daten aussehen:</p>
         <p>
-            <strong  >Name:</strong> _ga<br />
-            <strong  >Wert:</strong> GA1.2.1326744211.152322929322-9<br />
-            <strong  >Verwendungszweck:</strong> Unterscheidung der Websitebesucher<br />
-            <strong  >Ablaufdatum:</strong> nach 2 Jahren
+            <strong>Name:</strong> _ga<br />
+            <strong>Wert:</strong> GA1.2.1326744211.152322929322-9<br />
+            <strong>Verwendungszweck:</strong> Unterscheidung der Websitebesucher<br />
+            <strong>Ablaufdatum:</strong> nach 2 Jahren
         </p>
         <p>Diese Mindestgrößen sollte ein Browser unterstützen können:</p>
-        <ul  >
-            <li  >Mindestens 4096 Bytes pro Cookie</li>
-            <li  >Mindestens 50 Cookies pro Domain</li>
-            <li  >Mindestens 3000 Cookies insgesamt</li>
+        <ul>
+            <li>Mindestens 4096 Bytes pro Cookie</li>
+            <li>Mindestens 50 Cookies pro Domain</li>
+            <li>Mindestens 3000 Cookies insgesamt</li>
         </ul>
-        <h3  >Welche Arten von Cookies gibt es?</h3>
+        <h3>Welche Arten von Cookies gibt es?</h3>
         <p>Die Frage welche Cookies wir im Speziellen verwenden, hängt von den verwendeten Diensten ab und wird in den
             folgenden
             Abschnitten der Datenschutzerklärung geklärt. An dieser Stelle möchten wir kurz auf die verschiedenen Arten
@@ -462,7 +1003,7 @@
             HTTP-Cookies eingehen.</p>
         <p>Man kann 4 Arten von Cookies unterscheiden:</p>
         <p>
-            <strong  >Unerlässliche Cookies<br />
+            <strong>Unerlässliche Cookies<br />
             </strong>Diese Cookies sind nötig, um grundlegende Funktionen der Website sicherzustellen. Zum Beispiel
             braucht
             es
@@ -474,20 +1015,20 @@
             schließt.
         </p>
         <p>
-            <strong  >Zweckmäßige Cookies<br />
+            <strong>Zweckmäßige Cookies<br />
             </strong>Diese Cookies sammeln Infos über das Userverhalten und ob der User etwaige Fehlermeldungen bekommt.
             Zudem
             werden mithilfe dieser Cookies auch die Ladezeit und das Verhalten der Website bei verschiedenen Browsern
             gemessen.
         </p>
         <p>
-            <strong  >Zielorientierte Cookies<br />
+            <strong>Zielorientierte Cookies<br />
             </strong>Diese Cookies sorgen für eine bessere Nutzerfreundlichkeit. Beispielsweise werden eingegebene
             Standorte,
             Schriftgrößen oder Formulardaten gespeichert.
         </p>
         <p>
-            <strong  >Werbe-Cookies<br />
+            <strong>Werbe-Cookies<br />
             </strong>Diese Cookies werden auch Targeting-Cookies genannt. Sie dienen dazu dem User individuell
             angepasste
             Werbung zu liefern. Das kann sehr praktisch, aber auch sehr nervig sein.
@@ -496,21 +1037,20 @@
             zulassen
             möchten. Und natürlich wird diese Entscheidung auch in einem Cookie gespeichert.</p>
         <p>Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht scheuen, empfehlen wir <a
-                 
                 href="https://datatracker.ietf.org/doc/html/rfc6265">https://datatracker.ietf.org/doc/html/rfc6265</a>, dem
             Request for Comments der Internet Engineering Task Force (IETF) namens &#8220;HTTP State Management
             Mechanism&#8221;.</p>
-        <h3  >Zweck der Verarbeitung über Cookies</h3>
+        <h3>Zweck der Verarbeitung über Cookies</h3>
         <p>Der Zweck ist letztendlich abhängig vom jeweiligen Cookie. Mehr Details dazu finden Sie weiter unten bzw.
             beim
             Hersteller der Software, die das Cookie setzt.</p>
-        <h3  >Welche Daten werden verarbeitet?</h3>
+        <h3>Welche Daten werden verarbeitet?</h3>
         <p>Cookies sind kleine Gehilfen für eine viele verschiedene Aufgaben. Welche Daten in Cookies gespeichert
             werden,
             kann
             man leider nicht verallgemeinern, aber wir werden Sie im Rahmen der folgenden Datenschutzerklärung über die
             verarbeiteten bzw. gespeicherten Daten informieren.</p>
-        <h3  >Speicherdauer von Cookies</h3>
+        <h3>Speicherdauer von Cookies</h3>
         <p>Die Speicherdauer hängt vom jeweiligen Cookie ab und wird weiter unter präzisiert. Manche Cookies werden nach
             weniger
             als einer Stunde gelöscht, andere können mehrere Jahre auf einem Computer gespeichert bleiben.</p>
@@ -520,7 +1060,7 @@
             Einwilligung beruhen, spätestens nach Widerruf Ihrer Einwilligung gelöscht, wobei die Rechtmäßigkeit der
             Speicherung
             bis dahin unberührt bleibt.</p>
-        <h3  >Widerspruchsrecht &#8211; wie kann ich Cookies löschen?</h3>
+        <h3>Widerspruchsrecht &#8211; wie kann ich Cookies löschen?</h3>
         <p>Wie und ob Sie Cookies verwenden wollen, entscheiden Sie selbst. Unabhängig von welchem Service oder welcher
             Website
             die Cookies stammen, haben Sie immer die Möglichkeit Cookies zu löschen, zu deaktivieren oder nur teilweise
@@ -531,29 +1071,27 @@
             Cookie-Einstellungen
             ändern oder löschen wollen, können Sie dies in Ihren Browser-Einstellungen finden:</p>
         <p>
-            <a   href="https://support.google.com/chrome/answer/95647?tid=322929322"
-                target="_blank" rel="noopener noreferrer">Chrome: Cookies in Chrome löschen, aktivieren und
+            <a href="https://support.google.com/chrome/answer/95647?tid=322929322" target="_blank"
+                rel="noopener noreferrer">Chrome: Cookies in Chrome löschen, aktivieren und
                 verwalten</a>
         </p>
         <p>
-            <a  
-                href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=322929322" target="_blank"
+            <a href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=322929322" target="_blank"
                 rel="noopener noreferrer">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
         </p>
         <p>
-            <a  
-                href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=322929322"
+            <a href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=322929322"
                 target="_blank" rel="noopener noreferrer">Firefox: Cookies löschen, um Daten zu entfernen, die Websites
                 auf
                 Ihrem Computer abgelegt haben</a>
         </p>
         <p>
-            <a  
+            <a
                 href="https://support.microsoft.com/de-de/windows/l%C3%B6schen-und-verwalten-von-cookies-168dab11-0753-043d-7c16-ede5947fc64d?tid=322929322">Internet
                 Explorer: Löschen und Verwalten von Cookies</a>
         </p>
         <p>
-            <a  
+            <a
                 href="https://support.microsoft.com/de-de/microsoft-edge/cookies-in-microsoft-edge-l%C3%B6schen-63947406-40ac-c3b8-57b9-2a946a29ae09?tid=322929322">Microsoft
                 Edge: Löschen und Verwalten von Cookies</a>
         </p>
@@ -566,11 +1104,11 @@
             Google mit dem Suchbegriff “Cookies löschen Chrome” oder &#8220;Cookies deaktivieren Chrome&#8221; im Falle
             eines
             Chrome Browsers.</p>
-        <h3  >Rechtsgrundlage</h3>
+        <h3>Rechtsgrundlage</h3>
         <p>Seit 2009 gibt es die sogenannten „Cookie-Richtlinien“. Darin ist festgehalten, dass das Speichern von
             Cookies
             eine
-            <strong  >Einwilligung</strong> (Artikel 6 Abs. 1 lit. a DSGVO) von Ihnen verlangt.
+            <strong>Einwilligung</strong> (Artikel 6 Abs. 1 lit. a DSGVO) von Ihnen verlangt.
             Innerhalb der EU-Länder gibt es allerdings noch sehr unterschiedliche Reaktionen auf diese Richtlinien. In
             Österreich erfolgte aber die Umsetzung dieser Richtlinie in § 165 Abs. 3 des Telekommunikationsgesetzes
             (2021).
@@ -580,8 +1118,8 @@
             dieser Richtlinie weitgehend in § 15 Abs. 3 des Telemediengesetzes (TMG), welches seit Mai 2024 durch das
             Digitale-Dienste-Gesetz (DDG) ersetzt wurde.
         </p>
-        <p>Für unbedingt notwendige Cookies, auch soweit keine Einwilligung vorliegt, bestehen <strong
-                 >berechtigte Interessen</strong> (Artikel 6 Abs. 1 lit. f DSGVO), die in den
+        <p>Für unbedingt notwendige Cookies, auch soweit keine Einwilligung vorliegt, bestehen <strong>berechtigte
+                Interessen</strong> (Artikel 6 Abs. 1 lit. f DSGVO), die in den
             meisten
             Fällen wirtschaftlicher Natur sind. Wir möchten den Besuchern der Website eine angenehme Benutzererfahrung
             bescheren
@@ -592,12 +1130,12 @@
         <p>In den folgenden Abschnitten werden Sie genauer über den Einsatz von Cookies informiert, sofern eingesetzte
             Software
             Cookies verwendet.</p>
-        <h2 id="webhosting-einleitung"  >Webhosting Einleitung</h2>
+        <h2 id="webhosting-einleitung">Webhosting Einleitung</h2>
         <table border="1" cellpadding="15">
             <tbody>
                 <tr>
                     <td>
-                        <strong  >Webhosting Zusammenfassung</strong>
+                        <strong>Webhosting Zusammenfassung</strong>
                         <br />
                         &#x1f465; Betroffene: Besucher der Website<br />
                         &#x1f91d; Zweck: professionelles Hosting der Website und Absicherung des Betriebs<br />
@@ -611,7 +1149,7 @@
                 </tr>
             </tbody>
         </table>
-        <h3  >Was ist Webhosting?</h3>
+        <h3>Was ist Webhosting?</h3>
         <p>Wenn Sie heutzutage Websites besuchen, werden gewisse Informationen &#8211; auch personenbezogene Daten
             &#8211;
             automatisch erstellt und gespeichert, so auch auf dieser Website. Diese Daten sollten möglichst sparsam und
@@ -646,37 +1184,37 @@
         <p>Ein Bild sagt mehr als tausend Worte, daher zeigt folgende Grafik zur Veranschaulichung das Zusammenspiel
             zwischen
             Browser, dem Internet und dem Hosting-Provider.</p>
-        <h3  >Warum verarbeiten wir personenbezogene Daten?</h3>
+        <h3>Warum verarbeiten wir personenbezogene Daten?</h3>
         <p>Die Zwecke der Datenverarbeitung sind:</p>
         <ol>
-            <li  >Professionelles Hosting der Website und Absicherung des Betriebs</li>
-            <li  >zur Aufrechterhaltung der Betriebs- und IT-Sicherheit</li>
-            <li  >Anonyme Auswertung des Zugriffsverhaltens zur Verbesserung unseres Angebots
+            <li>Professionelles Hosting der Website und Absicherung des Betriebs</li>
+            <li>zur Aufrechterhaltung der Betriebs- und IT-Sicherheit</li>
+            <li>Anonyme Auswertung des Zugriffsverhaltens zur Verbesserung unseres Angebots
                 und
                 ggf.
                 zur Strafverfolgung bzw. Verfolgung von Ansprüchen</li>
         </ol>
-        <h3  >Welche Daten werden verarbeitet?</h3>
+        <h3>Welche Daten werden verarbeitet?</h3>
         <p>Auch während Sie unsere Website jetzt gerade besuchen, speichert unser Webserver, das ist der Computer auf
             dem
             diese
             Webseite gespeichert ist, in der Regel automatisch Daten wie</p>
-        <ul  >
-            <li  >die komplette Internetadresse (URL) der aufgerufenen Webseite</li>
-            <li  >Browser und Browserversion (z. B. Chrome 87)</li>
-            <li  >das verwendete Betriebssystem (z. B. Windows 10)</li>
-            <li  >die Adresse (URL) der zuvor besuchten Seite (Referrer URL) (z. B. <a
-                      href="https://www.beispielquellsite.de/vondabinichgekommen/"
-                    target="_blank" rel="follow noopener">https://www.beispielquellsite.de/vondabinichgekommen/</a>)
+        <ul>
+            <li>die komplette Internetadresse (URL) der aufgerufenen Webseite</li>
+            <li>Browser und Browserversion (z. B. Chrome 87)</li>
+            <li>das verwendete Betriebssystem (z. B. Windows 10)</li>
+            <li>die Adresse (URL) der zuvor besuchten Seite (Referrer URL) (z. B. <a
+                    href="https://www.beispielquellsite.de/vondabinichgekommen/" target="_blank"
+                    rel="follow noopener">https://www.beispielquellsite.de/vondabinichgekommen/</a>)
             </li>
-            <li  >den Hostnamen und die IP-Adresse des Geräts von welchem aus zugegriffen wird
+            <li>den Hostnamen und die IP-Adresse des Geräts von welchem aus zugegriffen wird
                 (z.
                 B.
                 COMPUTERNAME und 194.23.43.121)</li>
-            <li  >Datum und Uhrzeit</li>
-            <li  >in Dateien, den sogenannten Webserver-Logfiles</li>
+            <li>Datum und Uhrzeit</li>
+            <li>in Dateien, den sogenannten Webserver-Logfiles</li>
         </ul>
-        <h3  >Wie lange werden Daten gespeichert?</h3>
+        <h3>Wie lange werden Daten gespeichert?</h3>
         <p>In der Regel werden die oben genannten Daten zwei Wochen gespeichert und danach automatisch gelöscht. Wir
             geben
             diese
@@ -684,13 +1222,13 @@
             Verhalten
             von Behörden eingesehen werden.</p>
         <p>
-            <strong  >Kurz gesagt:</strong> Ihr Besuch wird durch unseren Provider (Firma, die
+            <strong>Kurz gesagt:</strong> Ihr Besuch wird durch unseren Provider (Firma, die
             unsere
             Website auf speziellen Computern (Servern) laufen lässt), protokolliert, aber wir geben Ihre Daten nicht
             ohne
             Zustimmung weiter!
         </p>
-        <h3  >Rechtsgrundlage</h3>
+        <h3>Rechtsgrundlage</h3>
         <p>Die Rechtmäßigkeit der Verarbeitung personenbezogener Daten im Rahmen des Webhosting ergibt sich aus Art. 6
             Abs.
             1
@@ -713,10 +1251,16 @@
                 href="https://www.adsimple.de/muster-datenschutzerklaerung/"
                 title="Muster Datenschutzerklärung">Muster-Datenschutzerklärung</a> an.</p>
 
-        <div class="app-footer">
-            <div class="footer-content">
-                <a href="/" (click)="closeTab()">&#169; Regina Gaigl 2025</a>
-            </div>
+
+    </div>
+    <div class="app-footer">
+        <div class="language-toggle">
+            <div class="lang" (click)="toggleLanguage('de')" [class.active]="currentLanguage == 'de'">DE</div>
+            <div class="separator"></div>
+            <div class="lang" (click)="toggleLanguage('en')" [class.active]="currentLanguage == 'en'">EN</div>
+        </div>
+        <div class="footer-content">
+            <a href="/" (click)="closeTab()">&#169; Regina Gaigl 2025</a>
         </div>
     </div>
 </section>

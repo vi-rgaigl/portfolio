@@ -36,9 +36,28 @@
     right: 0;
     height: 100vh;
     
-    @include d-flex(column, flex-end, flex-end, 0);
+    @include d-flex(column, space-between, center, 0);
     background-color: $bg-green;
 
+    .language-toggle {
+        @include d-flex(column, center, center, 8px);
+        color: black;
+        padding-top: 32px;
+    
+        .lang {
+            cursor: pointer;
+        }
+    
+        .separator {
+            width: 16px;
+            border-top: 3px solid black;
+        }
+    
+        .active {
+            color: white;
+        }
+    }
+    
     .footer-content {
         @include d-flex(column-reverse, center, center, 180px);
         width: var(--h-width);
