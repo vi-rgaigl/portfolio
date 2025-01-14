@@ -5,6 +5,11 @@
 
 $pad: 80px;
 
+h1, h2, h3, h4, h5, h6, p, strong, em, a, span, div, li, ul, ol, table td {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
 .section {
     @include d-flex(row, center, center, 0);
     @include bg-main();
@@ -59,4 +64,51 @@ $pad: 80px;
         }
     }
 
+}
+
+@media (max-width: 1200px) {
+    .section {
+        .content {
+            padding: 42px;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .section {
+        .content {
+            margin: $h-height 0 $h-height 0;
+            padding: 24px;
+        }
+    }
+
+    .app-footer {
+        position: absolute;
+        top: unset;
+        bottom: 0;
+        bottom: 0;
+        height: $h-height;
+        width: 100vw;
+        
+        @include d-flex(row, center, center, 0);
+        background-color: $bg-green;
+    
+        .footer-content {
+            @include d-flex(row, center, center, 32px);
+            width: 100%;
+            margin-bottom: 0;    
+            a {
+                transform: rotate(0);
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+
+    .section {
+        .content {
+            padding-right: 16px;
+        }
+    }
 }
