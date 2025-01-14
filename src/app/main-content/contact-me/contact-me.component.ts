@@ -26,6 +26,7 @@ export class ContactMeComponent {
 
   submitted = false;
   emailFocused = false;
+  isClosing = false;
   messageSentSuccess: boolean = false;
   messageSentError: boolean = false;
   events: any[] = [];
@@ -61,31 +62,18 @@ export class ContactMeComponent {
   }
 
   onSubmit(form: any) {
-    this.submitted = true;  
+    this.submitted = true;
     if (this.form.invalid) {
       return;
+    } else {
+      this.postEmail(
+        form.value.name,
+        form.value.email,
+        form.value.message
+      ).subscribe((response) => {
+        console.log('response', response);
+      });
     }
-    // für Email-Versand bitte die folgenden Zeilen aktivieren
-    // this.postEmail( form.value.name.toString(), form.value.email.toString(),
-    //   form.value.message.toString()
-    // )
-    //   .pipe(map((res) => res))
-    //   .subscribe(
-    //     (res) => {},
-    //     (error) => {
-    //       this.messageSentError = true;
-    //       this.form.reset();
-    //       setTimeout(() => {
-    //         this.messageSentError = false;
-    //       }, 3000);
-    //     },
-    //     () => {
-    //       this.messageSentSuccess = true;
-    //       setTimeout(() => {
-    //         this.messageSentSuccess = false;
-    //       }, 3000);
-    //     }
-    //   );
   }
 
   //Send an email using formspree.io account
@@ -102,18 +90,15 @@ export class ContactMeComponent {
     return this.httpClient.post<{ message: string }>(url, data, { headers }).pipe(
       map((response) => {
         console.log('email sent', response);
+        this.messageSentSuccess = true;
         return response.message; // Ensure the response is a string
       }),
       catchError((error) => {
         console.log('error sending email', error);
+        this.messageSentError = true;
         return of('error'); // Return a string in case of error
       })
     );
-  }
-
-  displayMessage() {
-    // Implement your success message logic here
-    console.log('Email sent successfully');
   }
 
   onFocus(controlName: string) {
@@ -122,8 +107,18 @@ export class ContactMeComponent {
     }
   }
 
-  onReset(): void {
+  closeEmailMessage() {
+    this.isClosing = true;
+    setTimeout(() => {
+    this.messageSentSuccess = false;
+    this.messageSentError = false;
+    }, 125);
+    this.onReset();
+  }
+
+  onReset() {
     this.submitted = false;
+    this.emailFocused = false;
     this.form.reset();
   }
 

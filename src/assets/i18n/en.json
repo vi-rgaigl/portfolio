@@ -31,6 +31,11 @@
     "work-together": "Let's work together.",
     "contact-text": "Wheather your project involves developing a new application or improving an existing one, I am here to help you. Feel free to contact me for any inquiries or project requests.",
     "legal-notice": "Legal Notice",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "email-message-title": "Your message has been sent successfully!",
+    "email-message-text": "Thank you for your message! I will get back to you as soon as possible.",
+    "email-error-title": "Error sending message",
+    "email-error-text": "We are sorry, your message could not be sent. Please try again later.",
+    "close": "Close"
 }
 

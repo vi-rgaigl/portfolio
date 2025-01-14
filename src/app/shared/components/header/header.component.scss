@@ -10,8 +10,8 @@ section {
 
 nav {
     height: 100%;
-    margin-bottom: 120px;
-    @include d-flex(column, space-between, center);
+    margin-bottom: 100px;
+    @include d-flex(column, space-around, center, 100px);
 
     img {
         width: 100%;
@@ -106,7 +106,7 @@ nav {
             }
 
             &.hide-menu {
-                transform: translateY(-216px);
+                transform: translateY(-92%);
                 animation: slideUp 0.25s ease-in-out;
             }
 
@@ -134,7 +134,7 @@ nav {
 
     @keyframes slideDown {
         from {
-            transform: translateY(-216px);
+            transform: translateY(-92%);
         }
 
         to {
@@ -148,7 +148,7 @@ nav {
         }
 
         to {
-            transform: translateY(-216px);
+            transform: translateY(-92%);
         }
     }
 }
