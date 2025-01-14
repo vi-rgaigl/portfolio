@@ -91,12 +91,12 @@ export class ContactMeComponent {
       map((response) => {
         console.log('email sent', response);
         this.messageSentSuccess = true;
-        return response.message; // Ensure the response is a string
+        return response.message;
       }),
       catchError((error) => {
         console.log('error sending email', error);
         this.messageSentError = true;
-        return of('error'); // Return a string in case of error
+        return of('error');
       })
     );
   }

@@ -14,7 +14,6 @@ export const appConfig: ApplicationConfig = {
         config: { 
           availableLangs: ['de', 'en'],
           defaultLang: 'en',
-          // Remove this option if your application doesn't support changing language in runtime.
           reRenderOnLangChange: true,
           prodMode: !isDevMode(),
         },
