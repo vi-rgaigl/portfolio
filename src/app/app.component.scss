@@ -3,6 +3,7 @@
   flex-direction: row;
   height: 100vh;
   overflow-y: hidden;
+  overflow-x: auto;
   font-size: 18px;
 }
 
@@ -20,7 +21,7 @@
 
 @media (max-width: 980px) {
   .app-content {
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
   }
   .app-footer {
