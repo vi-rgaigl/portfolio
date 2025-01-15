@@ -1,4 +1,4 @@
-<div class="app-content">
+<div class="app-content" id="drag" (mousedown) ="startDragging($event, false)" (mouseup) ="stopDragging($event, false)" (mouseleave) ="stopDragging($event, false)" (mousemove)="moveEvent($event)">
     <app-header class="app-header"></app-header>
     <router-outlet></router-outlet>
 </div>

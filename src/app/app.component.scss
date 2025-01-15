@@ -18,6 +18,19 @@
   z-index: 5;
 }
 
+// #drag {
+//   cursor: move;
+//   cursor: grab;
+//   cursor: --moz-grab;
+//   cursor: --webkit-grab;
+
+//   &:active {
+//     cursor: grabbing;
+//     cursor: --moz-grabbing;
+//     cursor: --webkit-grabbing;
+//   }
+// }
+
 @media (max-width: 980px) {
   .app-content {
     overflow-y: auto;

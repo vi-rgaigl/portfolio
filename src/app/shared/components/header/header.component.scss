@@ -106,7 +106,7 @@ nav {
             }
 
             &.hide-menu {
-                transform: translateY(-92%);
+                transform: translateY(-100%);
                 animation: slideUp 0.25s ease-in-out;
             }
 
@@ -134,7 +134,7 @@ nav {
 
     @keyframes slideDown {
         from {
-            transform: translateY(-92%);
+            transform: translateY(-100%);
         }
 
         to {
@@ -148,7 +148,7 @@ nav {
         }
 
         to {
-            transform: translateY(-92%);
+            transform: translateY(-100%);
         }
     }
 }

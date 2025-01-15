@@ -19,7 +19,7 @@ export class MyWorkComponent {
       description_de: 'Join ist eine mobile Anwendung, die es Benutzern ermöglicht, Veranstaltungen in ihrer Umgebung zu erstellen und beizutreten.',
       image: 'join.png',
       github: 'https://github.com/vi-rgaigl/join',
-      link: 'https://regina-gaigl.developerakademie.net/join.net',
+      link: 'https://www.regina-gaigl.net/join',
       technologies: 'HTML | CSS | JavaScript | Firebase',
       learned_en: 'I learned how to use Firebase to store and retrieve data from a database.',
       learned_de: 'Ich habe gelernt wie ich Firebase benutze, um Daten in einer Datenbank zu speichern und abzurufen.'
@@ -31,7 +31,7 @@ export class MyWorkComponent {
       description_de: 'El polo loco ist ein Jump and Run-Spiel, das auf objektorientierter Programmierung basiert.',
       image: 'pollo-loco.png',
       github: 'https://github.com/vi-rgaigl/el-pollo-loco',
-      link: 'https://regina-gaigl.developerakademie.net/el-pollo-loco.net',
+      link: 'https://www.regina-gaigl.net/el-pollo-loco',
       technologies: 'HTML | CSS | JavaScript',
       learned_en: 'I learned how to use object-oriented programming to create a game.',
       learned_de: 'Ich habe gelernt, wie ich objektorientierte Programmierung verwende, um ein Spiel zu erstellen.'

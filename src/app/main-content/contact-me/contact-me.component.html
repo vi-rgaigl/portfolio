@@ -30,7 +30,7 @@
                     />
                   </div>
                   <div>
-                    <textarea name="message" formControlName="message" rows="10" [placeholder]="submitted && f['message'].errors ? getErrorMessage('message', f['message'].errors) : ('your-message' | transloco)" class="form-control hide-placeholder" [ngClass]="{ 'is-invalid-textarea': submitted && f['message'].errors }"></textarea>
+                    <textarea name="message" formControlName="message" rows="7" [placeholder]="submitted && f['message'].errors ? getErrorMessage('message', f['message'].errors) : ('your-message' | transloco)" class="form-control hide-placeholder" [ngClass]="{ 'is-invalid-textarea': submitted && f['message'].errors }"></textarea>
                   </div>       
                   <div class="form-check">    
                     <input
