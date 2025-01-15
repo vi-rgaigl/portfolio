@@ -19,7 +19,5 @@ export class PrivacyPolicyComponent {
       this.currentLanguage = lang;
       this.translocoService.setActiveLang(this.currentLanguage);
     }
-  closeTab() {
-    window.close();
-  }
+
 }

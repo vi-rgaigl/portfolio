@@ -2,26 +2,42 @@
 @import "./../../styles/_mixin.scss";
 
 section {
-    height: 100px;
-    width:100%;
+    height: 110vh;
+    width: 42px;
     background-color: $bg-green;
+    z-index: 100;
+
     a {
-        color: $mobile-grey;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
+        display: none;
+    }
+    .content {
+        display: none;
     }
 
-    .content {
-        height: 100%;
-        @include d-flex(column, center, center, 12px);
-        .infos {
-            @include d-flex(row, center, center);
-        }
-    }
 }
 
 @media (max-width: 820px) {
+    section {
+        height: 100%;
+        width: 100%;
+        @include font(16px, 400, $mobile-grey);
 
+        a {
+            display: flex;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .content {
+            height: 100%;
+            @include d-flex(row, center, center, 12px);
+            text-align: center;
+            .infos {
+                @include d-flex(row, center, center, 12px);
+            }
+        }
+    }
 }

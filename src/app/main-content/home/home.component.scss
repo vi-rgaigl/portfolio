@@ -10,10 +10,9 @@ section {
 .main-header {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 100%;
+    right: 64px;
     height: $h-height;
-    padding-right: 80px;
+    width: 100%;
     @include d-flex(row, flex-end, center, 20px);
     z-index: 2;
     background: #000000;
@@ -141,6 +140,10 @@ section {
 @media (max-width: 980px) {
     section {
         background: unset;
+    }
+    .main-header {
+        right: 0;
+        padding-right: 80px;
     }
     .img-container {
         .arrow {

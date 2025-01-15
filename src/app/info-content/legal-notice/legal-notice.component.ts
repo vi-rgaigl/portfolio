@@ -20,8 +20,4 @@ export class LegalNoticeComponent {
       this.translocoService.setActiveLang(this.currentLanguage);
     }
 
-  closeTab() {
-    window.close();
-  }
-
 }

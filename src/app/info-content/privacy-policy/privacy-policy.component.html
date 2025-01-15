@@ -1,8 +1,14 @@
 <section class="section">
 
+    <div class="language-toggle">
+        <div class="lang" (click)="toggleLanguage('de')" [class.active]="currentLanguage == 'de'">DE</div>
+        <div class="separator"></div>
+        <div class="lang" (click)="toggleLanguage('en')" [class.active]="currentLanguage == 'en'">EN</div>
+    </div>
+
     <div class="content" *ngIf="translocoService.getActiveLang() === 'en'">
         <div class="arrow">
-            <a href="/"><img src="assets/icons/arrow-left.png" (click)="closeTab()" alt="move to home"></a>
+            <a href=""><img src="assets/icons/arrow-left.png" alt="move to home"></a>
         </div>
 
         <h1>Privacy Policy</h1>
@@ -526,7 +532,7 @@
 
     <div class="content" *ngIf="translocoService.getActiveLang() === 'de'">
         <div class="arrow">
-            <a href="/"><img src="assets/icons/arrow-left.png" (click)="closeTab()" alt="move to home"></a>
+            <a href=""><img src="assets/icons/arrow-left.png" alt="move to home"></a>
         </div>
 
         <h1>Datenschutzerklärung</h1>
@@ -1250,17 +1256,6 @@
             Generator für Deutschland von AdSimple. Schauen Sie sich auch unsere <a
                 href="https://www.adsimple.de/muster-datenschutzerklaerung/"
                 title="Muster Datenschutzerklärung">Muster-Datenschutzerklärung</a> an.</p>
-
-
     </div>
-    <div class="app-footer">
-        <div class="language-toggle">
-            <div class="lang" (click)="toggleLanguage('de')" [class.active]="currentLanguage == 'de'">DE</div>
-            <div class="separator"></div>
-            <div class="lang" (click)="toggleLanguage('en')" [class.active]="currentLanguage == 'en'">EN</div>
-        </div>
-        <div class="footer-content">
-            <a href="/" (click)="closeTab()">&#169; Regina Gaigl 2025</a>
-        </div>
-    </div>
+
 </section>
