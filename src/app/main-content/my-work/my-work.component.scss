@@ -87,9 +87,11 @@ section {
 @media (max-width: 980px) {
     section {
         height: auto;
+        width: calc(100vw - var(--h-width));
         overflow-y: unset;
         padding-top: 32px;
         padding-bottom: 32px;
+        padding-left: 0;
         background: unset;
         .section-content {
             flex-direction: column;
@@ -100,7 +102,7 @@ section {
                 width: 100%;
                 padding-top: 32px;
                 align-items: flex-start;
-                margin-top: -10%;
+                margin-top: 0;
                 margin-bottom: 2%;
                 .title {
                     transform: rotate(0deg);
@@ -110,6 +112,7 @@ section {
     }
     .content {
         max-width: 100%;
+        flex-direction: column;
         .upcoming {
             margin-top: -6%;
         }

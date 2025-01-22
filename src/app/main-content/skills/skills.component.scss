@@ -85,11 +85,12 @@ section {
         padding-top: 32px;
         padding-bottom: 32px;
         background: unset;
+        margin-right: 0;
         .section-content {
             flex-direction: column;
             width: 100%;
             padding-left: 8%;
-            padding-right: 8%;     
+            padding-right: 8%;  
             .section-title {
                 width: 100%;
                 padding-top: 32px;
