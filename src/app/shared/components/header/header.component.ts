@@ -14,11 +14,19 @@ export class HeaderComponent {
 
   constructor(private translocoService: TranslocoService) {}
 
+  ngOnInit() {
+    const savedLang = localStorage.getItem('language');
+    if (savedLang) {
+      this.translocoService.setActiveLang(savedLang);
+    }
+  }
+
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
   toggleLanguage(lang: string) {
     this.translocoService.setActiveLang(lang);
+    localStorage.setItem('language', lang);
   }
 }

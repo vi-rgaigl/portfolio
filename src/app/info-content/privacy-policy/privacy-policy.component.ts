@@ -11,13 +11,23 @@ import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 })
 export class PrivacyPolicyComponent {
 
-  currentLanguage: string = 'en';
+  currentLanguage: string = '';
 
     constructor(public translocoService: TranslocoService) {}
 
-    toggleLanguage(lang: string) {
-      this.currentLanguage = lang;
-      this.translocoService.setActiveLang(this.currentLanguage);
+    ngOnInit() {
+      let savedLang = localStorage.getItem('language');
+      if (savedLang) {
+        this.translocoService.setActiveLang(savedLang);
+        this.currentLanguage = savedLang;
+      } else {
+        this.currentLanguage = this.translocoService.getActiveLang();
+      }
     }
 
+    toggleLanguage(lang: string) {
+      this.currentLanguage = lang;
+      this.translocoService.setActiveLang(lang);
+      localStorage.setItem('language', lang);
+    }
 }

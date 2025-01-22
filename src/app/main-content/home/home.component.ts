@@ -13,8 +13,16 @@ export class HomeComponent {
 
   constructor(private translocoService: TranslocoService) {}
 
+  ngOnInit() {
+    let savedLang = localStorage.getItem('language');
+    if (savedLang) {
+      this.translocoService.setActiveLang(savedLang);
+    }
+  }
+
   toggleLanguage(lang: string) {
     this.currentLanguage = lang;
     this.translocoService.setActiveLang(this.currentLanguage);
+    localStorage.setItem('language', lang);
   }
 }
