@@ -5,6 +5,7 @@
 .section {
     @include d-flex(column, center, center, 0);
     @include bg-main();
+    height: 110vh;
 
     .language-toggle {
         @include d-flex(row, flex-end, center, 8px);
@@ -29,7 +30,7 @@
 
     .content {
         height: 100vh;
-        width: $c-last-width;
+        // width: $c-last-width;
         overflow-y: scroll;
         color: white;
         padding: 80px;

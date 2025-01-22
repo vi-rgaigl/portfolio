@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6, p, strong, em, a, span, div, li, ul, ol, table td {
 .section {
     @include d-flex(column, center, center, 0);
     @include bg-main();
+    height: 110vh;
 
     .language-toggle {
         @include d-flex(row, flex-end, center, 8px);
