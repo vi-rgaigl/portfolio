@@ -7,7 +7,7 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     height: 100vh;
-    width: 168vw;
+    // width: 184vw;
     padding-left: 180px;
     padding-top: $h-height;
     @include bg-main();
@@ -37,11 +37,11 @@ section {
     @include d-flex(row, flex-start, $gap: 64px);
 
     .project-card {
-        width: 100%;
+        width: 880px;
     }
 
     .upcoming {
-        width: 90%;
+        width: 18%;
         @include d-flex(column, flex-start, $gap: 0);
     }
 
@@ -73,7 +73,7 @@ section {
 
 
 .arrow {
-    max-width: 90%;
+    max-width: 96%;
     display:flex;
     justify-content: flex-end;
     margin-top: 100px;
@@ -113,8 +113,12 @@ section {
     .content {
         max-width: 100%;
         flex-direction: column;
+        .project-card {
+            width: auto;
+        }
         .upcoming {
             margin-top: -6%;
+            width: auto;
         }
     }
     .arrow {

@@ -1,118 +1,120 @@
-<section class="section">
+<div class="legal-notice">
+    <section class="section">
 
-    <div class="language-toggle">
-        <div class="lang" (click)="toggleLanguage('de')" [class.active]="currentLanguage == 'de'">DE</div>
-        <div class="separator"></div>
-        <div class="lang" (click)="toggleLanguage('en')" [class.active]="currentLanguage == 'en'">EN</div>
-    </div>
-
-    <div class="content" *ngIf="translocoService.getActiveLang() === 'en'">
-        <div class="arrow">
-            <a href="#contact"><img src="assets/icons/arrow-left.png" alt="move to home"></a>
+        <div class="language-toggle">
+            <div class="lang" (click)="toggleLanguage('de')" [class.active]="currentLanguage == 'de'">DE</div>
+            <div class="separator"></div>
+            <div class="lang" (click)="toggleLanguage('en')" [class.active]="currentLanguage == 'en'">EN</div>
         </div>
 
-        <h1>Legal Notice</h1>
-        <p>Information about the service provider.</p>
-        <p>Regina Gaigl</p>
-        <p>Riemer Gangsteig 5<br />
-            85622 Feldkirchen b. München,<br />
-            Germany
-        </p>
-        <p>
-            <strong>Phone:</strong> 015203247100<br />
-            <strong>Email:</strong> <a href="mailto:mail@regina-gaigl.net">mail&#64;regina-gaigl.net</a>
-        </p>
-        <h2>EU Dispute Resolution</h2>
-        <p>In accordance with the Regulation on Online Dispute Resolution in Consumer Matters
-            (ODR Regulation), we would like to inform you about the Online Dispute Resolution Platform (OS Platform).<br />
-            Consumers have the option to submit complaints to the Online Dispute Resolution Platform of the European
-            Commission
-            at <a 
-                href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=EN"
-                target="_blank"
-                rel="follow noopener">https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=EN</a>.
-            The necessary contact details can be found above in our legal notice.</p>
-        <p>However, we would like to point out that we are not willing or obliged
-            to participate in dispute resolution proceedings before a consumer arbitration board.</p>
-        <h2>Image Credits</h2>
-        <p>The images, photos, and graphics on this website are protected by copyright.
-        </p>
-        <p>
-            <strong>The image rights are held by:</strong>
-            <br />Regina Gaigl
-        </p>
-        <h2>Other Online Presences
-        </h2>
-        <p>
-            <strong>This legal notice also applies to</strong>
-            <br />
-            <a href="https://www.linkedin.com/in/regina-gaigl-417371228" target="_blank"
-                rel="noopener">https://www.linkedin.com/in/regina-gaigl-417371228</a>
-            <br />
-            <a href="https://github.com/vi-rgaigl" target="_blank"
-                rel="noopener">https://github.com/vi-rgaigl</a>?tab=repositories
-        </p>
-        <p>All texts are protected by copyright.</p>
-        <br>
-        <br>
-        <br>
-        <p>Source: Created with the <a href="https://www.adsimple.de/impressum-generator/"
-                title="Impressum Generator Deutschland von AdSimple">Impressum Generator</a> by AdSimple</p>
-    </div>
+        <div class="content" *ngIf="translocoService.getActiveLang() === 'en'">
+            <div class="arrow">
+                <a href="#contact"><img src="assets/icons/arrow-left.png" alt="move to home"></a>
+            </div>
 
-
-    <div class="content" *ngIf="translocoService.getActiveLang() === 'de'">
-        <div class="arrow">
-            <a href=""><img src="assets/icons/arrow-left.png" alt="move to home"></a>
+            <h1>Legal Notice</h1>
+            <p>Information about the service provider.</p>
+            <p>Regina Gaigl</p>
+            <p>Riemer Gangsteig 5<br />
+                85622 Feldkirchen b. München,<br />
+                Germany
+            </p>
+            <p>
+                <strong>Phone:</strong> 015203247100<br />
+                <strong>Email:</strong> <a href="mailto:mail@regina-gaigl.net">mail&#64;regina-gaigl.net</a>
+            </p>
+            <h2>EU Dispute Resolution</h2>
+            <p>In accordance with the Regulation on Online Dispute Resolution in Consumer Matters
+                (ODR Regulation), we would like to inform you about the Online Dispute Resolution Platform (OS
+                Platform).<br />
+                Consumers have the option to submit complaints to the Online Dispute Resolution Platform of the European
+                Commission
+                at <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=EN"
+                    target="_blank"
+                    rel="follow noopener">https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=EN</a>.
+                The necessary contact details can be found above in our legal notice.</p>
+            <p>However, we would like to point out that we are not willing or obliged
+                to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+            <h2>Image Credits</h2>
+            <p>The images, photos, and graphics on this website are protected by copyright.
+            </p>
+            <p>
+                <strong>The image rights are held by:</strong>
+                <br />Regina Gaigl
+            </p>
+            <h2>Other Online Presences
+            </h2>
+            <p>
+                <strong>This legal notice also applies to</strong>
+                <br />
+                <a href="https://www.linkedin.com/in/regina-gaigl-417371228" target="_blank"
+                    rel="noopener">https://www.linkedin.com/in/regina-gaigl-417371228</a>
+                <br />
+                <a href="https://github.com/vi-rgaigl" target="_blank"
+                    rel="noopener">https://github.com/vi-rgaigl</a>?tab=repositories
+            </p>
+            <p>All texts are protected by copyright.</p>
+            <br>
+            <br>
+            <br>
+            <p>Source: Created with the <a href="https://www.adsimple.de/impressum-generator/"
+                    title="Impressum Generator Deutschland von AdSimple">Impressum Generator</a> by AdSimple</p>
         </div>
 
-        <h1>Impressum</h1>
-        <p>Informationen über den Diensteanbieter.</p>
-        <p>Regina Gaigl</p>
-        <p>Riemer Gangsteig 5 
-            <br />85622 Feldkirchen b. München,
-            <br />Deutschland
-        </p>
-        <p>
-            <strong>Tel.:</strong> 015203247100<br />
-            <strong>E-Mail:</strong> <a href="mailto:mail@regina-gaigl.net">mail&#64;regina-gaigl.net</a>
-        </p>
-        <h2>EU-Streitschlichtung</h2>
-        <p>Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten
-            (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br />
-            Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen
-            Kommission
-            unter <a 
-                href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE"
-                target="_blank"
-                rel="follow noopener">https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE</a>
-            zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.</p>
-        <p>Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder verpflichtet
-            sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-        <h2>Bildernachweis</h2>
-        <p>Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich geschützt.
-        </p>
-        <p>
-            <strong>Die Bilderrechte liegen bei:</strong>
-            <br />Regina Gaigl
-        </p>
-        <h2>Weitere Onlineauftritte
-        </h2>
-        <p>
-            <strong>Dieses Impressum gilt auch für</strong>
-            <br />
-            <a href="https://www.linkedin.com/in/regina-gaigl-417371228" target="_blank"
-                rel="noopener">https://www.linkedin.com/in/regina-gaigl-417371228</a>
-            <br />
-            <a href="https://github.com/vi-rgaigl" target="_blank"
-                rel="noopener">https://github.com/vi-rgaigl</a>?tab=repositories
-        </p>
-        <p>Alle Texte sind urheberrechtlich geschützt.</p>
-        <br>
-        <br>
-        <br>
-        <p>Quelle: Erstellt mit dem <a href="https://www.adsimple.de/impressum-generator/"
-                title="Impressum Generator Deutschland von AdSimple">Impressum Generator</a> von AdSimple</p>
-    </div>
 
-</section>
+        <div class="content" *ngIf="translocoService.getActiveLang() === 'de'">
+            <div class="arrow">
+                <a href=""><img src="assets/icons/arrow-left.png" alt="move to home"></a>
+            </div>
+
+            <h1>Impressum</h1>
+            <p>Informationen über den Diensteanbieter.</p>
+            <p>Regina Gaigl</p>
+            <p>Riemer Gangsteig 5
+                <br />85622 Feldkirchen b. München,
+                <br />Deutschland
+            </p>
+            <p>
+                <strong>Tel.:</strong> 015203247100<br />
+                <strong>E-Mail:</strong> <a href="mailto:mail@regina-gaigl.net">mail&#64;regina-gaigl.net</a>
+            </p>
+            <h2>EU-Streitschlichtung</h2>
+            <p>Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten
+                (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform (OS-Plattform)
+                informieren.<br />
+                Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen
+                Kommission
+                unter <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE"
+                    target="_blank"
+                    rel="follow noopener">https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE</a>
+                zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.</p>
+            <p>Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder verpflichtet
+                sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            <h2>Bildernachweis</h2>
+            <p>Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich geschützt.
+            </p>
+            <p>
+                <strong>Die Bilderrechte liegen bei:</strong>
+                <br />Regina Gaigl
+            </p>
+            <h2>Weitere Onlineauftritte
+            </h2>
+            <p>
+                <strong>Dieses Impressum gilt auch für</strong>
+                <br />
+                <a href="https://www.linkedin.com/in/regina-gaigl-417371228" target="_blank"
+                    rel="noopener">https://www.linkedin.com/in/regina-gaigl-417371228</a>
+                <br />
+                <a href="https://github.com/vi-rgaigl" target="_blank"
+                    rel="noopener">https://github.com/vi-rgaigl</a>?tab=repositories
+            </p>
+            <p>Alle Texte sind urheberrechtlich geschützt.</p>
+            <br>
+            <br>
+            <br>
+            <p>Quelle: Erstellt mit dem <a href="https://www.adsimple.de/impressum-generator/"
+                    title="Impressum Generator Deutschland von AdSimple">Impressum Generator</a> von AdSimple</p>
+        </div>
+
+    </section>
+</div>

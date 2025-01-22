@@ -26,15 +26,19 @@ export class NewHorizontalScrollDirective {
   onResize(event: Event) {
     this.checkScreenWidth();
     if (!this.isMobile) {
-      this.horizontalWheelListener(); 
-    } else {   
+      this.horizontalWheelListener();
+    }
+    else if (!this.isMobile && this.isInsideLegalNotice()) {
+      this.removeWheelListener();
+    }
+    else {   
       this.removeWheelListener();
     }
   }
 
   checkScreenWidth() {
     this.isMobile = window.innerWidth < 980;
-    console.log('isMobile', this.isMobile);
+    // console.log('isMobile', this.isMobile);
   }
 
   onScrollLeft(event: WheelEvent) {
@@ -51,5 +55,10 @@ export class NewHorizontalScrollDirective {
       this.wheelListener();
       this.wheelListener = null;
     }
+  }
+
+  private isInsideLegalNotice(): boolean {
+    console.log('isInsideLegalNotice detected');
+    return this.el.nativeElement.closest('.legal-notice') !== null;
   }
 }

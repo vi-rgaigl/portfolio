@@ -58,6 +58,7 @@ section {
     display:flex;
     justify-content: flex-end;
     margin-top: 100px;
+    z-index: 3;
 
     &:hover {
         @include arrow-blur();
