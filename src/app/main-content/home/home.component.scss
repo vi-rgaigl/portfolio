@@ -10,7 +10,7 @@ section {
 .main-header {
     position: absolute;
     top: 0;
-    right: 64px;
+    right: 80px;
     height: $h-height;
     width: 100%;
     @include d-flex(row, flex-end, center, 20px);

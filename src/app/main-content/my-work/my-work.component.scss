@@ -7,15 +7,14 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     height: 100vh;
-    width: $c-width;
+    width: 168vw;
+    padding-left: 180px;
     padding-top: $h-height;
-    overflow-y: scroll;
     @include bg-main();
 
     .section-content {
         @include d-flex(row, flex-start, flex-start, 0);
         color:white;
-        margin-top: 8vh;
 
         .section-title {
             @include d-flex($justify: flex-start, $gap: 0);
@@ -35,16 +34,14 @@ section {
 }
 
 .content {
-    width: 100%;
-    max-width: 75%;
-    @include d-flex(column, flex-start, $gap: 64px);
+    @include d-flex(row, flex-start, $gap: 64px);
 
     .project-card {
         width: 100%;
     }
 
     .upcoming {
-        width: 100%;
+        width: 90%;
         @include d-flex(column, flex-start, $gap: 0);
     }
 

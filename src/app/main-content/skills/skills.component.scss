@@ -8,6 +8,7 @@ section {
     height: 100vh;
     width: $c-width;
     padding-top: $h-height;
+    margin-right: -160px;
     @include bg-main();
 
     .section-content {
