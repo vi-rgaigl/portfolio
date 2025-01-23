@@ -15,6 +15,9 @@ export class NewHorizontalScrollDirective {
     this.checkScreenWidth();
     if (!this.isMobile) {
       this.horizontalWheelListener();
+      if (this.isInsideLegalNotice()) {
+        this.removeWheelListener();
+      }    
     }
   }
 
@@ -27,9 +30,9 @@ export class NewHorizontalScrollDirective {
     this.checkScreenWidth();
     if (!this.isMobile) {
       this.horizontalWheelListener();
-    }
-    else if (!this.isMobile && this.isInsideLegalNotice()) {
-      this.removeWheelListener();
+      if (this.isInsideLegalNotice()) {
+        this.removeWheelListener();
+      }    
     }
     else {   
       this.removeWheelListener();
@@ -59,6 +62,6 @@ export class NewHorizontalScrollDirective {
 
   private isInsideLegalNotice(): boolean {
     console.log('isInsideLegalNotice detected');
-    return this.el.nativeElement.closest('.legal-notice') !== null;
+    return this.el.nativeElement.closest('app-legal-notice') !== null;
   }
 }

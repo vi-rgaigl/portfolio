@@ -36,6 +36,13 @@ section {
     @include d-flex(row, space-between, flex-start, 0);
 }
 
+.footer {
+    height: 110vh;
+    width: 80px;
+    background: $bg-green;
+    z-index: 50;
+}
+
 .form {
     width: 40%;
 
