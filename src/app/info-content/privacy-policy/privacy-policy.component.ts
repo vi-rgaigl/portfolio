@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
+import { NewHorizontalScrollDirective } from '../../new-horizontal-scroll.directive';
 
 @Component({
   selector: 'app-privacy-policy',
   standalone: true,
-  imports: [CommonModule,TranslocoModule],
+  imports: [CommonModule,
+    TranslocoModule,
+    NewHorizontalScrollDirective
+  ],
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })

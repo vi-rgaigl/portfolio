@@ -7,17 +7,18 @@ import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
 export class NewHorizontalScrollDirective {
 
   private isMobile: boolean = false;
+  private isMainContent: boolean = false;
+  private isLegalNotice: boolean = false;
   private wheelListener: (() => void) | null = null;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
   ngOnInit() {
     this.checkScreenWidth();
-    if (!this.isMobile) {
-      this.horizontalWheelListener();
-      if (this.isInsideLegalNotice()) {
-        this.removeWheelListener();
-      }    
+    this.isInsideMainContent();
+    this.isInsideLegalNotice();
+    if (!this.isMobile && this.isMainContent && !this.isLegalNotice) {
+      this.horizontalWheelListener(); 
     }
   }
 
@@ -28,12 +29,11 @@ export class NewHorizontalScrollDirective {
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
     this.checkScreenWidth();
-    if (!this.isMobile) {
-      this.horizontalWheelListener();
-      if (this.isInsideLegalNotice()) {
-        this.removeWheelListener();
-      }    
-    }
+    this.isInsideMainContent();
+    this.isInsideLegalNotice();
+    if (!this.isMobile && this.isMainContent && !this.isLegalNotice) {
+      this.horizontalWheelListener(); 
+    } 
     else {   
       this.removeWheelListener();
     }
@@ -42,6 +42,16 @@ export class NewHorizontalScrollDirective {
   checkScreenWidth() {
     this.isMobile = window.innerWidth < 980;
     // console.log('isMobile', this.isMobile);
+  }
+
+  isInsideMainContent() {
+    this.isMainContent = this.el.nativeElement.closest('.main-content') !== null;
+    // console.log('main-content: ' , this.isMainContent);
+  }
+
+  isInsideLegalNotice() {
+    this.isLegalNotice = this.el.nativeElement.closest('.legal-notice') !== null;
+    // console.log('legal-notice: ' , this.isLegalNotice);
   }
 
   onScrollLeft(event: WheelEvent) {
@@ -60,8 +70,5 @@ export class NewHorizontalScrollDirective {
     }
   }
 
-  private isInsideLegalNotice(): boolean {
-    console.log('isInsideLegalNotice detected');
-    return this.el.nativeElement.closest('app-legal-notice') !== null;
-  }
+
 }

@@ -4,6 +4,7 @@ import { WhyMeComponent } from '../why-me/why-me.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { MyWorkComponent } from '../my-work/my-work.component';
 import { ContactMeComponent } from '../contact-me/contact-me.component';
+import { NewHorizontalScrollDirective } from '../../new-horizontal-scroll.directive';
 
 @Component({
   selector: 'app-main-content',
@@ -14,6 +15,7 @@ import { ContactMeComponent } from '../contact-me/contact-me.component';
     SkillsComponent,
     MyWorkComponent,
     ContactMeComponent,
+    NewHorizontalScrollDirective,
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'

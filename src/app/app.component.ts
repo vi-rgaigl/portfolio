@@ -5,8 +5,6 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { TranslocoModule } from '@jsverse/transloco';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { NewHorizontalScrollDirective } from './new-horizontal-scroll.directive';
-
 
 @Component({
   selector: 'app-root',
@@ -18,7 +16,6 @@ import { NewHorizontalScrollDirective } from './new-horizontal-scroll.directive'
     HeaderComponent,
     FooterComponent,
     TranslocoModule,
-    NewHorizontalScrollDirective,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
