@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TranslocoModule],
+  imports: [TranslocoModule ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

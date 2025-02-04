@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { LegalNoticeComponent } from './info-content/legal-notice/legal-notice.component';
 import { PrivacyPolicyComponent } from './info-content/privacy-policy/privacy-policy.component';
 import { MainContentComponent } from './main-content/main-content/main-content.component';
