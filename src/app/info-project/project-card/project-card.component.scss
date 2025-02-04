@@ -65,6 +65,28 @@
     display: none;
 }
 
+@media (min-width: 3000px)  {
+    .body {
+        .info {
+            flex-direction: column-reverse;
+            .screenshot {
+                height: 15vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 2800px) {
+    .body {
+        .info {
+            flex-direction: row;
+            .screenshot {
+                height: 20vh;
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .body {
         .info {
@@ -97,6 +119,11 @@
     
         .title {
            font-size: 56px;
+        }
+    }
+    .body {
+        .info {
+            flex-direction: column-reverse;
         }
     }
 }

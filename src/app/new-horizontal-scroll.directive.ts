@@ -56,7 +56,7 @@ export class NewHorizontalScrollDirective {
 
   onScrollLeft(event: WheelEvent) {
     event.preventDefault();
-    this.el.nativeElement.scrollLeft += event.deltaY * 2;
+    this.el.nativeElement.scrollLeft += event.deltaY * 4;
   }
 
   private horizontalWheelListener() {
