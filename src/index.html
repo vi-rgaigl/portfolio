@@ -20,14 +20,17 @@
     if (element && mainContent) {
       if (window.innerWidth > 980) {
         event.preventDefault();
-        const targetPosition = element.offsetLeft - 180; // Adjust the offset as needed
-        console.log(`Scrolling horizontally to: ${targetPosition}px`);
+        let targetPosition = element.offsetLeft - 180;
+        if (sectionId === 'contact') {
+          targetPosition = element.offsetLeft;
+        }
+        // console.log(`Scrolling horizontally to: ${targetPosition}px`);
         mainContent.scrollTo({
           left: targetPosition,
           behavior: 'smooth'
         });
       } else {
-        const targetPosition = element.offsetTop; // Adjust the offset as needed
+        const targetPosition = element.offsetTop;
         console.log(`Scrolling vertically to: ${targetPosition}px`);
         mainContent.scrollTo({
           top: targetPosition,

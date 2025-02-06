@@ -85,12 +85,12 @@
                     <div class="contact-phone"><a href="tel:+4915203247100">&#9742; Tel: +49 1520 324 71 00</a></div>
                 </div>
                 <div class="arrow">
-                    <a href="#home"><img src="assets/icons/arrow-left.png" alt="back to start"></a>
+                    <a onclick="scrollToSection(event, 'home')"><img src="assets/icons/arrow-left.png" alt="back to start"></a>
                 </div>
                 <div class="links">
                     <a href="legal-notice">{{'legal-notice' | transloco}}</a>
                     <a href="privacy-policy">{{'privacy' | transloco}}</a>
-                    <a href="#home">&#169; Regina Gaigl 2025</a>
+                    <a onclick="scrollToSection(event, 'home')">&#169; Regina Gaigl 2025</a>
                 </div>
             </div>
         </div>
@@ -103,5 +103,5 @@
           <a href="https://github.com/vi-rgaigl?tab=repositories" target="_blank"><div class="github icon"></div></a>
       </div>
     </div>
-    <div class="footer"></div>
+    <div id="footer" class="footer"></div>
 </section>
