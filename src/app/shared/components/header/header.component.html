@@ -1,14 +1,27 @@
 <section id="header">  
     <nav>
-        <a href="#home" class="mobile-logo"><img src="assets/img/initial.png" alt="Logo"></a>
-        <div class="menu-link"><a href="#why-me">{{ 'why-me' | transloco}}</a></div>
-        <div class="menu-link"><a href="#skills">{{ 'skills' | transloco}}</a></div>
-        <div class="menu-link"><a href="#my-work">{{ 'my-work' | transloco}}</a></div>
-        <div class="menu-link"><a href="#contact">{{ 'contact' | transloco}}</a></div>
+        <!-- screen: bigger then 890px -->
+        <a class="toggle-logo mobile-logo" onclick="scrollToSection(event, 'home')"><img src="assets/img/initial.png" alt="Logo"></a>
+        <a class="toggle-mobile-logo mobile-logo" href="#home" ><img src="assets/img/initial.png" alt="Logo"></a>
 
+        <div class="menu-link toggle-link"><a onclick="scrollToSection(event, 'why-me')">{{ 'why-me' | transloco}}</a></div>
+        <div class="menu-link toggle-mobile-link"><a href="#why-me">{{ 'why-me' | transloco}}</a></div>
+        
+        <div class="menu-link toggle-link"><a onclick="scrollToSection(event, 'skills')">{{ 'skills' | transloco}}</a></div>
+        <div class="menu-link toggle-mobile-link"><a href="#skills">{{ 'skills' | transloco}}</a></div>
+
+        <div class="menu-link toggle-link"><a onclick="scrollToSection(event, 'my-work')">{{ 'my-work' | transloco}}</a></div>
+        <div class="menu-link toggle-mobile-link"><a href="#my-work">{{ 'my-work' | transloco}}</a></div>
+
+        <div class="menu-link toggle-link"><a onclick="scrollToSection(event, 'contact')">{{ 'contact' | transloco}}</a></div>
+        <div class="menu-link toggle-mobile-link"><a href="#contact">{{ 'contact' | transloco}}</a></div>
+
+
+        <!-- mobile: less than 820px -->
         <div class="mobile-burger" (click)="toggleMenu()">
             <img src="assets/icons/burger.png" alt="Mobile Menu">
         </div>
+        
         <div class="mobile-menu" (click)="toggleMenu()" [ngClass]="{ 'show-menu': isMenuOpen, 'hide-menu': !isMenuOpen }">
             <div class="mobile-link"><a href="#why-me">{{ 'why-me' | transloco}}</a></div>
             <div class="mobile-link"><a href="#skills">{{ 'skills' | transloco}}</a></div>

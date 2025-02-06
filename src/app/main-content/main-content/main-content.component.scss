@@ -18,11 +18,22 @@
   flex: 0 0 auto; 
 }
 
+.separator {
+  width: 6px;
+  height: 100vh;
+  @include bg-main;
+}
+
 @media (max-width: 980px) {
   .main-content {
     flex-direction: column;
     height: auto;
     background: linear-gradient( #000000, #0b0a0a );
+  }
+
+  .separator {
+    width: 50vw;
+    height: 6px;
   }
 }
 

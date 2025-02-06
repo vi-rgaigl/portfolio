@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Regina Gaigl</title>
@@ -7,7 +8,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+<script>
+  function scrollToSection(event, sectionId) {
+    
+    const element = document.getElementById(sectionId);
+    const mainContent = document.querySelector('.main-content');
+    if (element && mainContent) {
+      if (window.innerWidth > 980) {
+        event.preventDefault();
+        const targetPosition = element.offsetLeft - 180; // Adjust the offset as needed
+        console.log(`Scrolling horizontally to: ${targetPosition}px`);
+        mainContent.scrollTo({
+          left: targetPosition,
+          behavior: 'smooth'
+        });
+      } else {
+        const targetPosition = element.offsetTop; // Adjust the offset as needed
+        console.log(`Scrolling vertically to: ${targetPosition}px`);
+        mainContent.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      console.error('Element or main content not found');
+    }
+  }
+</script>
+
 </html>

@@ -32,12 +32,45 @@ nav {
         }
     }
 
+    .toggle-logo {
+        display: flex;
+    }
+
+    .toggle-mobile-logo {
+        display: none;
+    }
+
+    .toggle-link {
+        display: flex;
+    }
+
+    .toggle-mobile-link {
+        display: none;
+    }
+
     .mobile-burger {
         display: none;
     }
 
     .mobile-menu {
         display: none;
+    }
+}
+
+@media (max-width: 980px) {
+    nav {
+        .toggle-mobile-logo {
+            display: flex !important;
+        }
+        .toggle-logo {
+            display: none;
+        }
+        .toggle-mobile-link {
+            display: flex !important;
+        }
+        .toggle-link {
+            display: none;
+        }
     }
 }
 
