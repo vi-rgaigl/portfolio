@@ -15,8 +15,8 @@ export class MyWorkComponent {
     { 
       id: 1,
       name: 'Join',
-      description_en: 'Join is a mobile application that allows users to create and join events in their area.',
-      description_de: 'Join ist eine mobile Anwendung, die es Benutzern ermöglicht, Veranstaltungen in ihrer Umgebung zu erstellen und beizutreten.',
+      description_en: 'Join is a mobile application that allows users to create and join events.',
+      description_de: 'Join ist ein Kanbanboard, das es Anwendern ermöglicht, Aufgaben zu erstellen und zu bearbeiten.',
       image: 'join.png',
       github: 'https://github.com/vi-rgaigl/join',
       link: 'https://www.regina-gaigl.net/join',
